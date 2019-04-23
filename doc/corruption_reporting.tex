@@ -1,0 +1,167 @@
+\documentclass[12pt,final,fleqn]{article}
+
+% basic packages
+\usepackage[margin=1in] { geometry }
+\usepackage{amssymb,amsmath, bm}
+\usepackage{verbatim}
+\usepackage[latin1]{inputenc}
+%\usepackage[OT1]{fontenc}
+\usepackage{setspace}
+\usepackage{enumitem}
+\usepackage{url}
+\usepackage[font={bf}]{caption}
+\usepackage{float}
+%\usepackage{pgfplots}
+%\usepackage[font={bf}]{caption}
+\usepackage{setspace}
+\usepackage{latexsym}
+%\usepackage{euscript}
+\usepackage{graphicx}
+\usepackage{marvosym}
+\usepackage{amsmath} 
+\usepackage{authblk}
+\usepackage{xcolor}
+%\usepackage[varg]{txfonts}  Older version of ``g'' in math.
+
+% bibliography packages
+\usepackage[natbibapa]{apacite}
+\bibliographystyle{apacite}
+\bibpunct{(}{)}{;}{a}{}{,}
+\renewcommand{\bibname}{References}
+
+% hyperref options
+\usepackage{color}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\hypersetup{
+    colorlinks,
+    linkcolor={blue!50!black},
+    citecolor={blue!50!black},
+    urlcolor={blue!80!black}
+}
+\newcommand*{\Appendixautorefname}{Appendix}
+\renewcommand*{\sectionautorefname}{Section}
+\renewcommand*{\subsectionautorefname}{Section}
+\newcommand{\aref}[1]{\hyperref[#1]{Appendix~\ref{#1}}}
+
+% packages for tables
+\usepackage{longtable}
+\usepackage{booktabs, threeparttable}
+\usepackage{threeparttablex}
+%\usepackage{tabularx}
+% dcolumn package
+\usepackage{dcolumn}
+\newcolumntype{.}{D{.}{.}{-1}}
+\newcolumntype{d}[1]{D{.}{.}{#1}}
+\captionsetup{belowskip=10pt,aboveskip=-5pt}
+\usepackage{multirow}
+% rotating package
+\usepackage[figuresright]{rotating}
+\usepackage{pdflscape}
+\usepackage{subcaption}
+
+% packages for figures
+\usepackage{grffile}
+\usepackage{afterpage}
+\usepackage{float}
+\usepackage[section]{placeins}
+
+
+% theorem package
+\usepackage{theorem}
+\theoremstyle{plain}
+\theoremheaderfont{\scshape}
+\newtheorem{hyp}{Hypothesis}
+\newtheorem{theorem}{Theorem}
+\newtheorem{algorithm}{Algorithm}
+\newtheorem{assumption}{Assumption}
+\newtheorem{lemma}{Lemma}
+\newtheorem{proposition}{Proposition}
+\newtheorem{remark}{Remark}
+\newcommand{\qed}{\hfill \ensuremath{\Box}}
+\newcommand\indep{\protect\mathpalette{\protect\independenT}{\perp}}
+\DeclareMathOperator{\sgn}{sgn}
+\DeclareMathOperator{\tr}{tr}
+\DeclareMathOperator{\argmin}{arg\min}
+\DeclareMathOperator{\argmax}{arg\max}
+\def\independenT#1#2{\mathrel{\rlap{$#1#2$}\mkern2mu{#1#2}}}
+\providecommand{\norm}[1]{\lVert#1\rVert}
+\renewcommand\r{\right}
+\renewcommand\l{\left}
+\newcommand\E{\mathbb{E}}
+\newcommand\dist{\buildrel\rm d\over\sim}
+\newcommand\iid{\stackrel{\rm i.i.d.}{\sim}}
+\newcommand\ind{\stackrel{\rm indep.}{\sim}}
+\newcommand\cov{{\rm Cov}}
+\newcommand\var{{\rm Var}}
+\newcommand\SD{{\rm SD}}
+\newcommand\bone{\mathbf{1}}
+\newcommand\bzero{\mathbf{0}}
+
+% dotted lines in tables
+%\usepackage{arydshln}
+
+\usepackage{pdflscape}
+
+% spacing between sections and subsections
+\usepackage[compact]{titlesec}
+
+% times new roman
+%\usepackage{times}
+
+% appendix settings
+\usepackage[toc,page,header]{appendix}
+\renewcommand{\appendixpagename}{\centering Appendices}
+\usepackage{chngcntr}
+\usepackage{etoolbox}
+\usepackage{lipsum}
+
+
+% file paths and definitions
+\makeatletter
+\newcommand*\ExpandableInput[1]{\@@input#1 }
+\makeatother
+
+\setlength{\mathindent}{1cm}
+\allowdisplaybreaks[4]
+\doublespacing
+%\special{pdf: pagesize width 8.5truein height 11.0truein}
+
+\titleformat{\subsection}
+  {\itshape\large}{\thesubsection}{1em}{}
+
+\setcounter{tocdepth}{1}
+
+%--------------------------------------------------------------------------------------
+% BEGIN DOCUMENT
+%--------------------------------------------------------------------------------------
+
+\begin{document}
+\singlespace
+\title{\textbf{Evidence in policymaking}\vspace{-1ex}\thanks{}}
+% Thanks
+\author{Angele Delevoye\thanks{angele.delevoye@yale.edu}\vspace{-1ex}}
+\author{Trevor Incerti\thanks{trevor.incerti@yale.edu}\vspace{-1ex}}
+\affil{\textit{Yale University}\vspace{-2.5ex}}
+\date{\today}
+\maketitle
+
+\begin{abstract}
+\noindent
+\end{abstract}
+
+%\pagebreak
+
+\doublespace
+
+\begin{center}
+%[PREMIMINARY DRAFT: INCOMPLETE]
+\end{center}
+
+\section{Introduction} \label{sec:Introduction}
+
+\clearpage
+\pagebreak
+\bibliography{bibliography}
+
+\end{document} 
