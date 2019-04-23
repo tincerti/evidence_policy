@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  23 APR 2019 13:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  23 APR 2019 13:53
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**corruption_reporting.tex
-(./corruption_reporting.tex
+**evidence_policy.tex
+(./evidence_policy.tex
 LaTeX2e <2017-04-15>
 Babel <3.10> and hyphenation patterns for 84 language(s) loaded.
 (/usr/local/texlive/2017/texmf-dist/tex/latex/base/article.cls
@@ -541,8 +541,8 @@ Package: etoolbox 2017/01/02 v2.4 e-TeX tools for LaTeX (JAW)
 Package: lipsum 2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
 \c@lips@count=\count145
 )
-(./corruption_reporting.aux)
-\openout1 = `corruption_reporting.aux'.
+(./evidence_policy.aux)
+\openout1 = `evidence_policy.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 139.
 LaTeX Font Info:    ... okay on input line 139.
@@ -656,9 +656,9 @@ LaTeX Info: Redefining \ref on input line 139.
 LaTeX Info: Redefining \pageref on input line 139.
 LaTeX Info: Redefining \nameref on input line 139.
 
-(./corruption_reporting.out) (./corruption_reporting.out)
+(./evidence_policy.out) (./evidence_policy.out)
 \@outlinefile=\write3
-\openout3 = `corruption_reporting.out'.
+\openout3 = `evidence_policy.out'.
 
 LaTeX Font Info:    Try loading font information for U+msa on input line 148.
 
@@ -690,20 +690,13 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <7> not available
  [1
 
 {/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-(./corruption_reporting.bbl
-
-Package natbib Warning: Empty `thebibliography' environment on input line 3.
-
-)
+No file evidence_policy.bbl.
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 167.
- [2
-
-]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 167.
- (./corruption_reporting.aux)
+(./evidence_policy.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 167.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 167.
-Package rerunfilecheck Info: File `corruption_reporting.out' has not changed.
+Package rerunfilecheck Info: File `evidence_policy.out' has not changed.
 (rerunfilecheck)             Checksum: A02D95553E30B97FF125B1AA17CF9044;47.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 167.
  )
@@ -712,13 +705,13 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 167.
 ### semi simple group (level 1) entered at line 155 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 11141 strings out of 492995
- 161395 string characters out of 6132704
- 363161 words of memory out of 5000000
- 14470 multiletter control sequences out of 15000+600000
+ 11105 strings out of 492995
+ 160618 string characters out of 6132704
+ 363156 words of memory out of 5000000
+ 14437 multiletter control sequences out of 15000+600000
  18036 words of font info for 70 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,6n,38p,385b,425s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,6n,38p,380b,402s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmbx10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmbx12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/c
@@ -727,10 +720,10 @@ cmr12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cm
 sy10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cms
 y7.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti1
 2.pfb>
-Output written on corruption_reporting.pdf (2 pages, 72117 bytes).
+Output written on evidence_policy.pdf (1 page, 71121 bytes).
 PDF statistics:
- 50 PDF objects out of 1000 (max. 8388607)
- 38 compressed objects within 1 object stream
- 4 named destinations out of 1000 (max. 500000)
+ 46 PDF objects out of 1000 (max. 8388607)
+ 35 compressed objects within 1 object stream
+ 3 named destinations out of 1000 (max. 500000)
  9 words of extra memory for PDF output out of 10000 (max. 10000000)
 
