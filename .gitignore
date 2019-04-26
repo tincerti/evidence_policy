@@ -43,3 +43,28 @@ vignettes/*.pdf
 # Shiny token, see https://shiny.rstudio.com/articles/shinyapps.html
 rsconnect/
 .Rproj.user
+
+##########################
+# LaTeX files
+##########################
+# LaTeX intermediary files - core
+*.aux
+*.lof
+*.log
+*.lot
+*.fls
+*.out
+*.toc
+*.fmt
+*.fot
+*.cb
+*.cb2
+.*.lb
+*.synctex.gz
+
+# LaTeX intermediary files - bibliography
+*.bcf
+*.blg
+*-blx.aux
+*-blx.bib
+*.run.xml
