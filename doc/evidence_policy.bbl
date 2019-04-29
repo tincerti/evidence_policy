@@ -55,6 +55,60 @@ Butler, D\BPBI M.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Butler%
+, Karpowitz%
+\BCBL {}\ \BBA {} Pope%
+}{%
+Butler%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2012}}%
+}]{%
+butler2012field}
+\APACinsertmetastar {%
+butler2012field}%
+\begin{APACrefauthors}%
+Butler, D\BPBI M.%
+, Karpowitz, C\BPBI F.%
+\BCBL {}\ \BBA {} Pope, J\BPBI C.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2012}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {A field experiment on legislators? home styles: service
+  versus policy} {A field experiment on legislators? home styles: service
+  versus policy}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{The Journal of Politics}{74}{2}{474--486}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Butler%
+, Nickerson%
+\BCBL {}\ \protect \BOthers {.}}{%
+Butler%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2011}}%
+}]{%
+butler2011can}
+\APACinsertmetastar {%
+butler2011can}%
+\begin{APACrefauthors}%
+Butler, D\BPBI M.%
+, Nickerson, D\BPBI W.%
+\BCBL {}\ \BOthersPeriod {.}\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2011}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Can learning constituency opinion affect how legislators
+  vote? Results from a field experiment} {Can learning constituency opinion
+  affect how legislators vote? results from a field experiment}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Quarterly Journal of Political Science}{6}{1}{55--83}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Cairney%
 }{%
 Cairney%
@@ -78,6 +132,31 @@ Cairney, P.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Doberstein%
+}{%
+Doberstein%
+}{%
+{\protect \APACyear {2017}}%
+}]{%
+doberstein2017whom}
+\APACinsertmetastar {%
+doberstein2017whom}%
+\begin{APACrefauthors}%
+Doberstein, C.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2017}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Whom do bureaucrats believe? A randomized controlled
+  experiment testing perceptions of credibility of policy research} {Whom do
+  bureaucrats believe? a randomized controlled experiment testing perceptions
+  of credibility of policy research}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Policy Studies Journal}{45}{2}{384--405}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Fenno%
 }{%
 Fenno%
@@ -97,6 +176,30 @@ Fenno, R\BPBI F.%
 \APACrefbtitle {Congressmen in committees} {Congressmen in committees}.
 \newblock
 \APACaddressPublisher{}{Little, Brown}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Fenno%
+}{%
+Fenno%
+}{%
+{\protect \APACyear {2002}}%
+}]{%
+fenno2002home}
+\APACinsertmetastar {%
+fenno2002home}%
+\begin{APACrefauthors}%
+Fenno, R\BPBI F.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2002}.
+\newblock
+\APACrefbtitle {Home Style: House Members in Their Districts (Longman Classics
+  Series)} {Home style: House members in their districts (longman classics
+  series)}.
+\newblock
+\APACaddressPublisher{}{Longman Publishing Group London, England}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -252,6 +355,31 @@ Schick, A.%
   supply and demand for analysis on capitol hill}.{\BBCQ}
 \newblock
 \APACjournalVolNumPages{Policy Analysis}{}{}{215--234}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Zelizer%
+}{%
+Zelizer%
+}{%
+{\protect \APACyear {2018}}%
+}]{%
+zelizer2018responsive}
+\APACinsertmetastar {%
+zelizer2018responsive}%
+\begin{APACrefauthors}%
+Zelizer, A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2018}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {How Responsive Are Legislators to Policy Information?
+  Evidence from a Field Experiment in a State Legislature} {How responsive are
+  legislators to policy information? evidence from a field experiment in a
+  state legislature}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Legislative Studies Quarterly}{43}{4}{595--618}.
 \PrintBackRefs{\CurrentBib}
 
 \end{thebibliography}
