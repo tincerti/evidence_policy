@@ -29,14 +29,14 @@ t = 8 # Number of treatment groups
 m = N/t  # Number of units to be assigned to each treatment arm
 
 # Define hypothesized potential outcomes in each treatment group: mean
-mean_t1 = 0.05
-mean_t2 = 0.05 * 1.01
-mean_t3 = 0.05 * 1.05
-mean_t4 = 0.05 * 1.10
-mean_t5 = 0.05 * 1.15
-mean_t6 = 0.05 * 1.20
-mean_t7 = 0.05 * 1.25
-mean_t8 = 0.05 * 1.30
+mean_t1 = 0.3
+mean_t2 = 0.3 * 1.01
+mean_t3 = 0.3 * 1.05
+mean_t4 = 0.3 * 1.10
+mean_t5 = 0.3 * 1.15
+mean_t6 = 0.3 * 1.20
+mean_t7 = 0.3 * 1.25
+mean_t8 = 0.3 * 1.30
 
 # Define hypothesized potential outcomes in each treatment group: standard dev
 sd_t1 = 0.01
