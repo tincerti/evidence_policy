@@ -274,9 +274,24 @@ Conducting the experiment at the federal level would be substantially interestin
 
 \section{Power Analysis} \label{sec:Power}
 
-We perform a power analysis in order to estimate the maximum number of treatment groups that may be advisable to include in the experiment given sample size and budgetary constraints. Preliminary power analyses are depicted below, and derive their assumptions regarding hypothetical response rates and treatment effect sizes from \citet{kalla2016campaign}.
+We perform power analyses in order to estimate the maximum number of treatment groups that may be advisable to include in the experiment given sample size and budgetary constraints. Preliminary power analyses are depicted below, and derive their assumptions regarding hypothetical response rates and treatment effect sizes from past experiments. 
 
-The first power analysis assumes a sample size of 535 respondents (i.e. the number of representatives in the US Congress). In \citet{kalla2016campaign}, congressional offices granted meetings in response to requests roughly 50\% of the time. However, as the organizations requesting meetings were political donors (whether revealed or not), we believe that such a success rate may be unreasonably high, and therefore conduct our power analysis assuming a more conservative 30\% of offices will grant meetings.
+The first power analysis assumes a sample size of 535 respondents (i.e. the number of representatives in the US Congress). In \citet{kalla2016campaign}, congressional offices granted meetings in response to requests roughly 50\% of the time. However, as the organizations requesting meetings were political donors (whether revealed or not), we believe that such a success rate may be unreasonably high, and therefore conduct our power analysis assuming a more conservative 30\% of offices will grant meetings. 30\% therefore represents the assumed rate of successful meetings in the first treatment group, which may be thought of as the control group. In Treatment 2 - low quality evidence + information provision - we assume an average treatment effect of -10\%. In Treatment 3 - high quality evidence + no information provision - we assume an average treatment effect of 5\%. In Treatment 4 - high quality evidence + information provision - we assume an average treatment effect of 12.5\%. For all treatment groups, we assume a standard deviation of 0.08. A power analysis using 10,000 simulations results in power of 0.86, 0.34, and 0.97 in treatment groups 2, 3, and 4, respectively.\footnote{Rounded to the nearest 100th decimal place.} A graphical depiction of this power analysis can be found in \autoref{fig: power_fed}.
+
+\begin{figure}[!htb]
+\includegraphics{../figs/power_fed.pdf}
+\caption{Power analysis: federal congress}
+\label{fig: power_fed}
+\end{figure}
+
+We next conduct a power analysis using state legislatures. This theoretically could increase our possible sample size drastically, to roughly 5,000 respondents. However, we recognize that it would be logistically impractical for an organization to set up meetings with with such a large number of offices across such a wide geographical range. We therefore restrict ourself to a sample size of 1000, which could be achieved by sampling only from states in the Northeast United States. Using the same assumptions of treatment effect sizes and variable that informed the power analysis in \autoref{fig: power_fed}, \autoref{fig: power_state} depicts the statistical power results from this increased sample size. The larger sample size results in statistical power of 0.99, 0.55, and 1 in treatment groups 2, 3, and 4, respectively.\footnote{Rounded to the nearest 100th decimal place.}
+
+\begin{figure}[!htb]
+\includegraphics{../figs/power_state.pdf}
+\caption{Power analysis: state legislatures}
+\label{fig: power_state}
+\end{figure}
+
 
 
 \section{Conclusion} \label{sec:Conclusion}

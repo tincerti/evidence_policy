@@ -19,9 +19,6 @@ theme_set(theme_bw())
 ###############################################################################
 # Setup
 ###############################################################################
-# Set a seed
-set.seed(30)
-
 # Basic information about experimental setting
 sims = 10000  # Number of simulations
 N = 535  # Size of the experimental sample
@@ -65,6 +62,8 @@ test = tibble(.rows = N)
 ###############################################################################
 # Power calculation
 ###############################################################################
+set.seed(30)
+
 # Power calculation
 for (i in 1:sims) {
   
@@ -155,9 +154,9 @@ pvalue$pvalue = round(pvalue$pvalue, 2)
 ###############################################################################
 # Define names of treatment groups
 treatment_names <- c(
-  `2` = "Low quality + Information",
-  `3` = "High quality + No information",
-  `4` = "High quality + Information"
+  `2` = "Low quality evidence + Information provision",
+  `3` = "High quality evidence + No information provision",
+  `4` = "High quality evidence + Information provision"
   # `5` = "Treatment 5",
   # `6` = "Treatment 6",
   # `7` = "Treatment 7",
@@ -178,7 +177,8 @@ power = ggplot(pvalue, aes(pvalue,
   geom_vline(xintercept = 0.05, linetype = "dashed", size = 0.2) +
   facet_wrap( ~ treatment, ncol = 1, labeller = as_labeller(treatment_names)) +
   scale_y_continuous(limits = c(0, sims)) +
-  geom_text(x = .5, y = 7500, color = "black") +
+  geom_text(stat = "identity", position = "identity",
+            check_overlap = TRUE, x = .5, y = 7500, color = "black") +
   scale_fill_manual(values = c("seagreen2", "firebrick1"),
                      labels = c("True", "False"),
                      name = "P value is less than 0.05:") +
@@ -193,4 +193,4 @@ power = ggplot(pvalue, aes(pvalue,
   theme(plot.title = element_text(hjust = 0.5)) +
   theme(legend.position = "bottom")
 
-ggsave("figs/power_fed.pdf", power, height = 6, width = 7)
+ggsave("figs/power_fed.pdf", power, height = 6, width = 6)
