@@ -138,7 +138,7 @@
 
 \begin{document}
 \singlespace
-\title{\textbf{Policy-makers and evidence: double standards? A field experiment \\
+\title{\textbf{Legislators and use of evidence: double standards? A field experiment \\
 (Pre-Analysis Plan)}\vspace{-1ex}\thanks{}}
 % Thanks
 \author{Angele Delevoye\thanks{angele.delevoye@yale.edu}\vspace{-1ex}}
@@ -276,12 +276,13 @@ We recognize that reaching out to policy-makers with information on a policy can
 
 \section{Power Analysis} \label{sec:Power}
 
-We perform power analyses in order to estimate the maximum number of treatment groups that may be advisable to include in the experiment given sample size and budgetary constraints. Preliminary power analyses are depicted below, and derive their assumptions regarding hypothetical response rates and treatment effect sizes from past experiments. 
+We perform power analyses in order to estimate the maximum number of treatment groups that may be advisable to include in the experiment given sample size and budgetary constraints. Preliminary power analyses are depicted below, and derive their assumptions regarding hypothetical response rates and treatment effect sizes from past experiments. These preliminary power analyses are conservative estimates, as we did not include the effects of our future blocking strategy.
 
-The first power analysis assumes a sample size of 535 respondents (i.e. the number of representatives in the US Congress). In \citet{kalla2016campaign}, congressional offices granted meetings in response to requests roughly 50\% of the time. However, as the organizations requesting meetings were political donors (whether revealed or not), we believe that such a success rate may be unreasonably high, and therefore conduct our power analysis assuming a more conservative 30\% of offices will grant meetings. 30\% therefore represents the assumed rate of successful meetings in the first treatment group, which may be thought of as the control group. In Treatment 2 - low quality evidence + information provision - we assume an average treatment effect of -10\%. In Treatment 3 - high quality evidence + no information provision - we assume an average treatment effect of 5\%. In Treatment 4 - high quality evidence + information provision - we assume an average treatment effect of 12.5\%. For all treatment groups, we assume a standard deviation of 0.08. A power analysis using 10,000 simulations results in power of 0.86, 0.34, and 0.97 in treatment groups 2, 3, and 4, respectively.\footnote{Rounded to the nearest 100th decimal place.} A graphical depiction of this power analysis can be found in \autoref{fig: power_fed}.
+The first power analysis assumes a sample size of 535 respondents (i.e. the number of representatives and senators in the US Congress). In \citet{kalla2016campaign}, congressional offices granted meetings in response to requests roughly 50\% of the time. However, as the organizations requesting meetings were political donors (whether revealed or not), we believe that such a success rate may be unreasonably high for our own experiment, and therefore conduct our power analysis assuming a more conservative 30\% of offices will grant meetings. 30\% therefore represents the assumed rate of successful meetings in the first treatment group (low information + no information provision), which may be thought of as the control group. In Treatment 2 - low quality evidence + information provision - we assume an average treatment effect of -10\%. In Treatment 3 - high quality evidence + no information provision - we assume an average treatment effect of 5\%. In Treatment 4 - high quality evidence + information provision - we assume an average treatment effect of 12.5\%. For all treatment groups, we assume a standard deviation of 0.08. A power analysis using 10,000 simulations results in power of 0.86, 0.34, and 0.97 in treatment groups 2, 3, and 4, respectively.\footnote{Rounded to the nearest 100th decimal place.} A graphical depiction of this power analysis can be found in \autoref{fig: power_fed}.
 
 \begin{figure}[!htb]
 \includegraphics{../figs/power_fed.pdf}
+\bigbreak
 \caption{Power analysis: federal congress}
 \label{fig: power_fed}
 \end{figure}
@@ -290,6 +291,7 @@ We next conduct a power analysis using state legislatures. This theoretically co
 
 \begin{figure}[!htb]
 \includegraphics{../figs/power_state.pdf}
+\bigbreak
 \caption{Power analysis: state legislatures}
 \label{fig: power_state}
 \end{figure}
@@ -315,6 +317,11 @@ The next step on this project will be to gather feedback and make decisions on t
 \section{Appendix} \label{Appendix}
 
 \subsection{Department of Education evidence tiers} \label{sec: DoE}
-
+\begin{figure}[!htb]
+\includegraphics{../figs/doe_tiers.png}
+\bigbreak
+\caption{DoE's tiers of evidence}
+\label{fig: doe_tiers}
+\end{figure}
 
 \end{document} 
