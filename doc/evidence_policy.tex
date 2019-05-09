@@ -284,7 +284,14 @@ A third risk is the potential burden our experiment would place on legislators' 
 
 \subsection{Estimation of treatment effects} \label{sec:treatment_effects}
 
-As noted above, we intend to use block random assignment in order  to increase the precision of our treatment effect estimates as well as to facilitate (preregistered) estimation of heterogenous treatment effects. Treatment effect estimates will therefore be calculated as the difference-in-means of the response rate from subjects in each of treatment groups and the response rate from subjects in the control group in each block, weighted by the number of subjects in each block relative to the total number of subjects.
+As noted above, we intend to use block random assignment in order  to increase the precision of our treatment effect estimates as well as to facilitate (preregistered) estimation of heterogenous treatment effects. Treatment effect estimates will therefore be calculated as the difference-in-means of the response rate from subjects in each of treatment groups and the response rate from subjects in the control group in each block, weighted by the number of subjects in each block relative to the total number of subjects. More formally, average treatment effects will be estimated as:
+
+\begin{center}
+$ATE = \sum_{j = 1}^{J} \frac{N_j}{N}ATE_j$
+\end{center}
+
+\noindent
+where $J$ is the number of blocks, blocks are indexed by $j$, and $\frac{N_j}{N}$ represents the share of subjects who belong to block $j$. 
 
 In practice, these differences-in-means will be calculated using a weighted least squares regression of response rate on treatment assignment, with weights corresponding to the inverse probability of treatment for each unit (IPW). All p-values will be calculated using randomization inference. As the reference/control group in the experiment is in effect the ``No information / lower tier'' treatment group, all effects must be interpreted in relation to this treatment. In other words, treatment effects should be interpreted as the change in response rate relative to the ``No information / lower tier'' group.
 
