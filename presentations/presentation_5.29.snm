@@ -1,3 +1,11 @@
-\beamer@slide {tab: arms}{10}
-\beamer@slide {doe_evidence<1>}{15}
-\beamer@slide {doe_evidence}{15}
+\beamer@slide {tab: arms}{12}
+\beamer@slide {doe_evidence<1>}{21}
+\beamer@slide {doe_evidence}{21}
+\beamer@slide {doe_cluster<1>}{22}
+\beamer@slide {doe_cluster}{22}
+\beamer@slide {doe_iv<1>}{23}
+\beamer@slide {doe_iv}{23}
+\beamer@slide {doe_missing<1>}{24}
+\beamer@slide {doe_missing}{24}
+\beamer@slide {doe_rd<1>}{25}
+\beamer@slide {doe_rd}{25}

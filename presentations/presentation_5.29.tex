@@ -130,14 +130,16 @@
 \begin{itemize}
 \item Secondary Education Act, No Child Left Behind, Every Student Succeeds Act
 \end{itemize}
+\pause
 \item Department of Education standards.
 \begin{itemize}
 \item Strong causal evidence
 \item Moderate causal evidence
 \item Low causal evidence
-\item High levels of specificity, covering IVs, cluster-random assignment, RDs, and missingness/attrition. 
+\item High levels of specificity covering cluster-random assignment \hyperlink{doe_cluster}{\beamerbutton{Figure}}, IVs \hyperlink{doe_iv}{\beamerbutton{Figure}}, and missingness/attrition \hyperlink{doe_missing}{\beamerbutton{Figure}}, and RDs \hyperlink{doe_rd}{\beamerbutton{Figure}}. 
 \end{itemize}
-\item Department of Labor has adopted similar standards \hyperlink{doe_evidence}{\beamerbutton{Figure}}
+\pause
+\item Department of Labor has adopted similar standards.
 \end{itemize}
 
 \end{frame}
@@ -191,6 +193,54 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}
+\frametitle{Outcomes}
+
+\begin{itemize}
+\item Stuff here
+\end{itemize}
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+\frametitle{Treatment effect estimation}
+
+\begin{itemize}
+\item Block random assignment.
+\item $ATE = \sum_{j = 1}^{J} \frac{N_j}{N}ATE_j$
+\begin{itemize}
+\item Where $J$ is the number of blocks, blocks are indexed by $j$, and $\frac{N_j}{N}$ represents the share of subjects who belong to block $j$. 
+\end{itemize}
+\item P-values calculated using randomization inference.
+\item Control group = Low quality evidence + no information
+\end{itemize}
+Heterogenous treatment effects (CATEs)
+\begin{itemize}
+\item Party
+\item ... ?
+\end{itemize}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+\frametitle{Power analysis: federal}
+
+\only<1>{
+\begin{figure}
+\vspace{-0.25cm}
+\includegraphics[scale=0.54]{../figs/power_fed.pdf}
+\end{figure}
+}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
 \frametitle{Power analysis: state}
 
 \only<1>{
@@ -204,17 +254,34 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\begin{frame}
+\frametitle{Power analysis assumptions}
+
+\begin{itemize}
+\item N = 535 (federal) and 1000 (state)
+\item Low quality evidence + information provision = -10\%
+\item High quality evidence + no information provision = 5\%
+\item High quality evidence + information provision = 12.5\%
+\item Standard deviation = 0.08
+\end{itemize}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \section{Conclusion}
 
 \begin{frame}
 \frametitle{Questions}
 \begin{itemize}
-\item Should we use a neutral or partisan policy proposal?
+\item Use a neutral or partisan policy proposal?
 \begin{itemize}
-\item Partisan policy proposal might allow us to test legislator's motivated reason, but power issues.
+\item Partisan policy proposal might allow us to test legislator's motivated reasoning, but power issues.
 \end{itemize}
-\item Suggestions for kind of organization to partner with?
+\item Better outcome measurements?
+\item Suggestions for kind of organization to partner with? Is organizational partnering feasible?
 \item Federal, state, or local level?
+\item Other suggestions?
 \end{itemize}
 
 \end{frame}
@@ -222,6 +289,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \appendix
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Supplemental material}
 
@@ -235,8 +303,60 @@
 \end{figure}
 }
 
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}[label= doe_cluster]
+\frametitle{Evidence tiers: cluster random assignment}
+
+\begin{center}
+\vspace{-0.85cm}
+\hspace*{-1cm}
+\includegraphics[scale=0.5]{../figs/DoE_clusters.png} 
+\end{center}
 
 \end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}[label= doe_iv]
+\frametitle{Evidence tiers: instrumental variables}
+
+\begin{center}
+\vspace{-0.35cm}
+\includegraphics[scale=0.62]{../figs/DoE_CACE_IV.png} 
+\end{center}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}[label= doe_missing]
+\frametitle{Evidence tiers: missingness and attrition}
+
+\begin{center}
+\vspace{-0.3cm}
+\hspace*{-1cm}
+\includegraphics[scale=0.58]{../figs/DoE_missing.png} 
+\end{center}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}[label= doe_rd]
+\frametitle{Evidence tiers: regression discontinuity}
+
+\begin{center}
+\vspace{-0.85cm}
+\hspace*{-1cm}
+\includegraphics[scale=0.55]{../figs/DoE_RDs.png} 
+\end{center}
+
+\end{frame}
+
+
 
 
 \end{document}
