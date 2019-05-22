@@ -308,6 +308,34 @@ Mayhew, D\BPBI R.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+McGinnies%
+\ \BBA {} Ward%
+}{%
+McGinnies%
+\ \BBA {} Ward%
+}{%
+{\protect \APACyear {1980}}%
+}]{%
+mcginnies1980better}
+\APACinsertmetastar {%
+mcginnies1980better}%
+\begin{APACrefauthors}%
+McGinnies, E.%
+\BCBT {}\ \BBA {} Ward, C\BPBI D.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1980}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Better liked than right: Trustworthiness and expertise
+  as factors in credibility} {Better liked than right: Trustworthiness and
+  expertise as factors in credibility}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Personality and Social Psychology
+  Bulletin}{6}{3}{467--472}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Patashnik%
 \ \BBA {} Peck%
 }{%
@@ -332,6 +360,30 @@ Patashnik, E\BPBI M.%
 \newblock
 \APACjournalVolNumPages{Governing in a Polarized Age: Elections, Parties, and
   Political Representation in America}{}{}{267}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Pornpitakpan%
+}{%
+Pornpitakpan%
+}{%
+{\protect \APACyear {2004}}%
+}]{%
+pornpitakpan2004persuasiveness}
+\APACinsertmetastar {%
+pornpitakpan2004persuasiveness}%
+\begin{APACrefauthors}%
+Pornpitakpan, C.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2004}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {The persuasiveness of source credibility: A critical
+  review of five decades' evidence} {The persuasiveness of source credibility:
+  A critical review of five decades' evidence}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of applied social psychology}{34}{2}{243--281}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
