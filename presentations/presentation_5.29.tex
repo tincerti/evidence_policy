@@ -82,7 +82,7 @@
 %\setbeamercovered{white}
     %\usepackage{bm} % For typesetting bold math (not \mathbold)
     %\logo{\includegraphics[height=0.6cm]{yourlogo.eps}}
-\title{Do legislators prioritize high quality evidence? A field experiment}
+\title{Are legislators more responsive to high quality evidence? A field experiment}
 \author{Angèle Delevoye and Trevor Incerti}
 
 \date{29 May 2019} 
@@ -98,26 +98,93 @@
 \begin{frame}
 \frametitle{Research Questions}
 \begin{itemize}
-\item Do policymakers give more credence to high quality research?
+\item Do policymakers \textcolor{Cerulean}{give more credence} to high quality research?
+\vspace{15mm}
 \pause
-\item Can policymakers can recognize differences in research quality?
+\item Can policymakers \textcolor{Cerulean}{recognize} differences in research quality?
 \end{itemize}
 \end{frame}
 
 %\item Heterogeneity by party \hyperlink{hte_party}{\beamerbutton{Figure}} and pre-existing nationalism \hyperlink{hte_nat}{\beamerbutton{Figure}} in Japan. 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Theory}
+
+\begin{frame}
+\frametitle{Pre-existing literature}
+
+\begin{itemize}
+\item Stuff here
+\end{itemize}
+
+\end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}
-\frametitle{Power analysis: federal}
+\frametitle{Evidence standards}
 
-\only<1>{
-\begin{figure}
-\vspace{-0.25cm}
-\includegraphics[scale=0.54]{../figs/power_fed.pdf}
-\end{figure}
-}
+\begin{itemize}
+\item Evidence standards and descriptions already adopted in federal legislation.
+\begin{itemize}
+\item Secondary Education Act, No Child Left Behind, Every Student Succeeds Act
+\end{itemize}
+\item Department of Education standards.
+\begin{itemize}
+\item Strong causal evidence
+\item Moderate causal evidence
+\item Low causal evidence
+\item High levels of specificity, covering IVs, cluster-random assignment, RDs, and missingness/attrition. 
+\end{itemize}
+\item Department of Labor has adopted similar standards \hyperlink{doe_evidence}{\beamerbutton{Figure}}
+\end{itemize}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+\frametitle{DoE evidence standards}
+
+\begin{center}
+\vspace{-0.85cm}
+\hspace*{-1cm}
+\includegraphics[scale=0.57]{../figs/DoE_standards.png} 
+\end{center}
+
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Design}
+
+\begin{frame}
+\frametitle{Overview of experimental design}
+
+\begin{itemize}
+\item 2x2 factorial design with two treatments:
+\begin{itemize}
+\item Evidence standard (low vs. high)
+\item Whether evidence standards are explained to policymakers
+\end{itemize}
+\end{itemize}
+
+\begin{table}[H]
+\centering
+\caption{Treatment arms: 2x2 factorial design}
+\vspace{-7mm}
+\label{tab: arms} 
+\bigbreak
+\begin{tabular}{|l|l|l|l|l|}
+\hline
+& \textbf{Lower Tier} & \textbf{Higher Tier} \\ \hline
+\textbf{No information} & Control & High and no info \\ \hline
+\textbf{Information} & Low and info & High and info \\ \hline
+\end{tabular}
+\end{table}
 
 \end{frame}
 
@@ -140,10 +207,14 @@
 \section{Conclusion}
 
 \begin{frame}
-\frametitle{Conclusion}
-
+\frametitle{Questions}
 \begin{itemize}
-\item Stuff
+\item Should we use a neutral or partisan policy proposal?
+\begin{itemize}
+\item Partisan policy proposal might allow us to test legislator's motivated reason, but power issues.
+\end{itemize}
+\item Suggestions for kind of organization to partner with?
+\item Federal, state, or local level?
 \end{itemize}
 
 \end{frame}
@@ -154,8 +225,15 @@
 
 \section{Supplemental material}
 
-\begin{frame}[label= appendix1]
-\frametitle{Appendix 1}
+\begin{frame}[label= doe_evidence]
+\frametitle{Evidence tiers}
+
+\only<1>{
+\begin{figure}
+\vspace{-0.25cm}
+\includegraphics[scale=0.75]{../figs/doe_tiers.png}
+\end{figure}
+}
 
 
 \end{frame}
