@@ -1,11 +1,16 @@
 \beamer@slide {tab: arms}{12}
-\beamer@slide {doe_evidence<1>}{23}
-\beamer@slide {doe_evidence}{23}
-\beamer@slide {doe_cluster<1>}{24}
-\beamer@slide {doe_cluster}{24}
-\beamer@slide {doe_iv<1>}{25}
-\beamer@slide {doe_iv}{25}
-\beamer@slide {doe_missing<1>}{26}
-\beamer@slide {doe_missing}{26}
-\beamer@slide {doe_rd<1>}{27}
-\beamer@slide {doe_rd}{27}
+\beamer@slide {existing<1>}{26}
+\beamer@slide {existing}{26}
+\beamer@slide {tab:audit_experiments}{26}
+\beamer@slide {doe_evidence<1>}{27}
+\beamer@slide {doe_evidence}{27}
+\beamer@slide {doe_cluster<1>}{28}
+\beamer@slide {doe_cluster}{28}
+\beamer@slide {doe_iv<1>}{29}
+\beamer@slide {doe_iv}{29}
+\beamer@slide {doe_missing<1>}{30}
+\beamer@slide {doe_missing}{30}
+\beamer@slide {doe_rd<1>}{31}
+\beamer@slide {doe_rd}{31}
+\beamer@slide {other_agencies<1>}{32}
+\beamer@slide {other_agencies}{32}
