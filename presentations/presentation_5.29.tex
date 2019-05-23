@@ -83,7 +83,7 @@
     %\usepackage{bm} % For typesetting bold math (not \mathbold)
     %\logo{\includegraphics[height=0.6cm]{yourlogo.eps}}
 \title{Are legislators more responsive to high quality evidence? A field experiment}
-\author{Angèle Delevoye and Trevor Incerti}
+\author{Angèle Delevoye and Sōm Duchébaggè}
 
 \date{29 May 2019} 
 
@@ -131,7 +131,8 @@
 \item Secondary Education Act, No Child Left Behind, Every Student Succeeds Act
 \end{itemize}
 \pause
-\item Department of Education standards.
+\vspace{0.5cm}
+\item Department of Education (DoE) standards.
 \begin{itemize}
 \item Strong causal evidence
 \item Moderate causal evidence
@@ -196,7 +197,16 @@
 \frametitle{Outcomes}
 
 \begin{itemize}
-\item Stuff here
+\item Ideally: partner with a \textcolor{Cerulean}{3rd party organization} and examine: 
+\begin{enumerate} 
+\item Whether or not a \textcolor{Cerulean}{meeting was established}.
+\item Seniority of the individual with whom a successful meeting was granted (as in \citet{kalla2016campaign}).
+\pause
+\item [--] May also allow us to engage in participant observation.
+\end{enumerate}
+\pause
+\vspace{1cm}
+\item Alternatively: \textcolor{Cerulean}{email response rates}
 \end{itemize}
 
 \end{frame}
@@ -207,6 +217,7 @@
 \begin{frame}
 \frametitle{Treatment effect estimation}
 
+Primary effects (ATE)
 \begin{itemize}
 \item Block random assignment.
 \item $ATE = \sum_{j = 1}^{J} \frac{N_j}{N}ATE_j$
@@ -215,11 +226,12 @@
 \end{itemize}
 \item P-values calculated using randomization inference.
 \item Control group = Low quality evidence + no information
+\vspace{0.5cm}
 \end{itemize}
 Heterogenous treatment effects (CATEs)
 \begin{itemize}
-\item Party
-\item ... ?
+\item Party, ..., ?
+\item Note preregistration, multiple comparisons, and power.
 \end{itemize}
 
 \end{frame}
@@ -259,9 +271,11 @@ Heterogenous treatment effects (CATEs)
 
 \begin{itemize}
 \item N = 535 (federal) and 1000 (state)
-\item Low quality evidence + information provision = -10\%
-\item High quality evidence + no information provision = 5\%
-\item High quality evidence + information provision = 12.5\%
+\vspace{0.5cm}
+\item Low quality evidence + information provision = \textcolor{BrickRed}{-10\%}
+\item High quality evidence + no information provision = \textcolor{Emerald}{+5\%}
+\item High quality evidence + information provision = \textcolor{LimeGreen}{+12.5\%}
+\vspace{0.5cm}
 \item Standard deviation = 0.08
 \end{itemize}
 
@@ -274,12 +288,12 @@ Heterogenous treatment effects (CATEs)
 \begin{frame}
 \frametitle{Questions}
 \begin{itemize}
-\item Use a neutral or partisan policy proposal?
+\item Use a \textcolor{Cerulean}{neutral or partisan policy} proposal?
 \begin{itemize}
 \item Partisan policy proposal might allow us to test legislator's motivated reasoning, but power issues.
 \end{itemize}
-\item Better outcome measurements?
-\item Suggestions for kind of organization to partner with? Is organizational partnering feasible?
+\item Better \textcolor{Cerulean}{outcome measurements}?
+\item Suggestions for kind of \textcolor{Cerulean}{organization to partner with}? Is organizational partnering feasible?
 \item Federal, state, or local level?
 \item Other suggestions?
 \end{itemize}
@@ -358,5 +372,5 @@ Heterogenous treatment effects (CATEs)
 
 
 
-
+\bibliography{../doc/bibliography}
 \end{document}
