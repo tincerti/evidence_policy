@@ -170,17 +170,22 @@ Our pre-analysis first presents the theory and existing literature we hope to ad
 
 
 \section{Theory} \label{sec:Theory}
+
+\subsection{Science, research and democracy}  \label{sec: democracy}
+This project may speak to broader theoretical questions on the functioning of our current democracies, and the potential gaps between reality and the ideals of deliberative democracies. In this sense, we hope this project will contribute to ongoing discussions within philosophy of science, such as perceptions of research methods and consumption of scientific evidence outside of the academy.
+\bigbreak
+[Tensions and relationships between science and democracy]
+
 \subsection{Evidence in policymaking}  \label{sec: evidence}
 
 A growing literature examines if, when, and how evidence and expertise is used in policy-making. The conventional wisdom from the this literature in the US Congressional context has long been that evidence and information do not matter. Legislators are focused on reelection \citep{mayhew1974congress}, power within Congress \citep{fenno1973congressmen}, and responding to pressures from local constituents \citep{fenno2002home}. \citet{schick1976supply} concluded in 1976 that ``Congress is not a natural habit for policy analysis," and \citet{lindblom2018science} states that the best Congress can do is ``muddle through" given institutional constraints and lack of time and resources. 
 
 Recently, however, scholars have called for a more nuanced understanding of the use of evidence in policy-making \citep{patashnik2016can}, despite well-identified methodological challenges \citep{mandell1984approaches}. Case studies have suggested that evidence is used in policy-making, but we need a better understanding of how (much), when and why. Scholars have also examined the supply of scientific evidence, and have looked how scientists can maximize the use of scientific evidence. \citet{cairney2016politics} lays out two types of shortcuts used by legislators, rational decision-making and irrational decision-making drawing on emotions, beliefs and habits. He argues that scientists have mostly focused on the former, and that they should do a better job at accompanying evidence with simple stories to exploit the emotional or ideological biases of policymakers. We hope to test and measure legislators' ability to respond to the first, rational type of stimulus. 
 
-Experimental research on messenger effects (i.e. does the source of information matter?) may also be relevant to our research design. Source credibility theory hypothesizes that high-credibility sources are more effective in matters of persuasion than low-credibility sources and distinguishes between expertise and trustworthiness as sources of credibility \citep{pornpitakpan2004persuasiveness}. Additional research has found that trustworthiness (i.e. being ``liked'') is more effective than expertise (i.e. being ``right'') \citep{mcginnies1980better}, implying that the source of evidence is important in addition to evidence quality. This implies that the institution responsible for the research may be highly important, and should therefore be held constant across treatment groups and should be a trusted, non-partisan instituion. 
+Experimental research on messenger effects (i.e. does the source of information matter?) may also be relevant to our research design. Source credibility theory hypothesizes that high-credibility sources are more effective in matters of persuasion than low-credibility sources and distinguishes between expertise and trustworthiness as sources of credibility \citep{pornpitakpan2004persuasiveness}. Additional research has found that trustworthiness (i.e. being ``liked'') is more effective than expertise (i.e. being ``right'') \citep{mcginnies1980better}, implying that the source of evidence is important in addition to evidence quality. This implies that the institution responsible for the research may be highly important, and should therefore be held constant across treatment groups and should be a trusted, non-partisan institution. 
 
 Our initial goal is to conduct this experiment with the U.S. Congress, however it may be necessary to change our focus to the the state or local level for power or logistical reasons. In this case, we would need to consider literature on policy deliberation in state and local politics. 
 
-Finally, this project may speak to broader theoretical questions on the functioning of our current democracies, and the potential gaps between reality and the ideals of deliberative democracies. In this sense, we hope this project will contribute to ongoing discussions within philosophy of science, such as perceptions of research methods and consumption of scientific evidence outside of the academy.
 
 \subsection{Legislator contact experiments}  \label{sec: contact experiments}
 
@@ -247,13 +252,26 @@ Information    & Low and info       &  High and info              \\ \hline
 
 \subsection{Evidence standards} \label{sec:Evidence}
 
-We rely on evidence standards and descriptions already adopted in some laws (Elementary and Secondary Education Act - ESEA 65, No Child Left Behind - NCLB 01, Every Student Succeeds Act - ESSA 15) and used by the Department of Education (DoE) and Department of Labor (DoL). The DoL defines three tiers of evidence: high causal evidence (primarily RCTs), moderate causal evidence (strong non-experimental designs or RCTs with high attrition) or low causal evidence studies. The DOL defines the low causal studies as studies that do not meet criteria for a high or moderate evidence rating. Those studies, according to the DoL, show little evidence that the effects estimated in the study are attributable to the intervention being examined, and other factors are likely to have contributed to the results. They should be interpreted with caution. The DoE has adopted similar standards (see \autoref{sec: DoE}). 
+We rely on evidence standards and descriptions already adopted in some laws (Elementary and Secondary Education Act - ESEA 65, No Child Left Behind - NCLB 01, Every Student Succeeds Act - ESSA 15) and used by the Department of Education (DoE) and other federal agencies. Since 2015, the Every Student Succeeds Act encourages state educational agencies (SEAs), local educational agencies (LEAs), and schools to prioritize and include evidence-based interventions, strategies, or approaches. Funding for some program is conditional on proving that the program has been showed to work by a rigorous, evidence-based study. ESSA's definition of "evidence-based" includes 4 levels of evidence:
 
-We use these standards because they are ostensibly used in actual policy-making decisions. These definitions already exist, are specified in law and implementation texts, and have been referenced in previous projects and studies (see below). In order to maximize statistical power and increase the clarity of our research design, we will focus only the studies from the highest tier of evidence and those from the lowest tier. This will keep our experimental design to a 2x2 factorial design, as opposed to a higher dimensional design that would result from inclusion of all evidence tiers. One potential downside of this approach is that it may require us to restrict ourselves to quantitative studies.\footnote{We have not yet looked at the databased and associated studies. We doubt it, but it is possible that qualitative studies are already incorporated into the databases and one of the 3 evidence standards. We will need to think about whether we want to add qualitative studies as an additional category. We will also need to check whether qualitative studies are used in the DoE and DoL databases, and if yes, under which tier of evidence.} 
+\begin{figure}[H]
+\includegraphics{../figs/doe_tiers.png}
+\bigbreak
+\caption{ESSA's tiers of evidence (Source: bill text and Results for America)}
+\label{fig: doe_tiers}
+\end{figure}
+
+The DoE has extremely detailed implementation standards for ESSA, with very specific decision-trees to decide in which of their three quality tiers of evidence each study falls under. RCTs with low attrition, or RDDs satisfying the usual assumptions (integrity of the forcing variable, sample attribution, continuity, bandwidth and functional form choices) fall under the high causal evidence category. The DoE also provide clear guidelines on how to deal with missingness, clusters, CACE/IVs designs (see \autoref{sec: DoE} for detailed decision-trees used by the DoE). 
+
+Other federal agencies have followed the DoE's steps and developed their own standards (see \autoref{sec: clearinghouses}). For example, the DoL defines three tiers of evidence: high causal evidence (primarily RCTs), moderate causal evidence (strong non-experimental designs or RCTs with high attrition) or low causal evidence studies. The DOL defines the low causal studies as studies that do not meet criteria for a high or moderate evidence rating. Those studies, according to the DoL, show little evidence that the effects estimated in the study are attributable to the intervention being examined, and other factors are likely to have contributed to the results. They should be interpreted with caution. 
+
+We use these standards because they are ostensibly used in actual policy-making decisions. These definitions already exist, are specified in law and implementation texts, and have been referenced in previous projects and studies (see below). In order to maximize statistical power and increase the clarity of our research design, we will focus only the studies from the highest tier of evidence and those from the lowest tier. This will keep our experimental design to a 2x2 factorial design, as opposed to a higher dimensional design that would result from inclusion of all evidence tiers. One potential downside of this approach is that it may require us to restrict ourselves to quantitative studies.
 
 \subsection{Choice of policy} \label{sec: Policy}
 
-The policy and specific findings we will report on are yet to be determined. Ideally, we would use similar findings coming from 3 or 4 studies belonging to different tiers of evidence. The DoE and DoL each have comprehensive databases of most studies conducted in their respective policy areas, their findings and the evidence tier to which they belong. We can leverage these existing databases (What Works Clearing House for the DoE, CLEAR for the DoL) in order to find studies we can use in our experiment. 
+The policy and specific findings we will report on are yet to be determined. Ideally, we would use similar findings coming from 2 studies belonging to different tiers of evidence. The DoE has a comprehensive database of most studies conducted in education policy (What Works ClearingHouse), their findings and the evidence tier to which they belong. In order to identify the studies which belong in the dataset, the Institute of Education Sciences (IES) within the DoE conduct literature scans, receives public nominations or suggestions from education associations or other organizations, as well as input from state and federal policymakers. 
+
+We can leverage this existing database, or similar ones constructed by other federal agencies (see \autoref{sec: clearinghouses} for a more comprehensive list of federal clearinghouses), in order to find studies we can use in our experiment. 
 
 For ethical reasons we will need to locate studies that reach similar results using different methods (ethics are considered in more detail in the \nameref{sec:Ethics} section below). More specifically, the results of the studies will need to be similar enough to use the same one-sentence summaries in our messages without resorting to deception. Depending on the studies that we find, we might need to be more or less specific in the formulation of the results in our email (it could be anything from a very broad result such as ``small class size increase educational outcomes'' to more specific results such as ``adding curriculum x to classes y raises z''). Ideally, the results would also be surprising or new, in order to both maximize the level of new information we are providing, as well as to raise the incentives of meeting with an organization regarding the results. For example, providing policymakers with information regarding an educational policy that has already been adopted would be ignored for reasons unrelated to the content of the randomized treatments. 
 
@@ -265,6 +283,12 @@ What outcomes we would measure and how is still an open question. The simplest o
 The source of the email has yet to be determined. In order to maximize the realism and reach of the experiment, we will ideally partner with a third-party organization seeking to establish meetings with policymakers. Emails will be sent from this organization, rather than from us. Once again, this design mirrors that of \citet{kalla2016campaign}. To this end, we will contact think tanks, policy labs, and advocacy groups as potential partners. 
 
 %If we work with state and local policy makers, we will try to find a group with a large geographic and regional presence. It would be better to reach out to policy-makers in Idaho with a group with some presence if not in Idaho, at least in the northwest. 
+
+
+\subsection{Email wording} \label{sec: Email}
+
+This is an example of the types of emails we sent. 
+
 
 \subsection{Federal or state level?} \label{sec: Level}
 
@@ -329,7 +353,7 @@ We next conduct a power analysis using state legislatures. This theoretically co
 
 \section{Conclusion} \label{sec:Conclusion}
 
-Our next steps on this project include finalization of some of the research design decisions that remain open (i.e. federal or state level subjects, partnership with an organization, and choice of the policy). We hope to finalize these details over the summer and to preregister a final Pre-Analysis-Plan with EGAP by the end of 2019. We would then conduct the experiment in 2020. We believe that this timeline would be ideal because of the political and electoral contexts expected in 2020. An election year increases the likelihood that parties will be seeking innovative policy ideas, and it is therefore possible that legislators will be particularly responsive to information on such policies. 
+Our next steps on this project include finalization of some of the research design decisions that remain open (i.e. federal or state level subjects, partnership with an organization, and choice of the policy). We hope to finalize these details over the summer and to preregister a final Pre-Analysis-Plan with EGAP by the end of 2019. We would then conduct the experiment in 2020. We believe that this timeline would be ideal because of the political and electoral contexts expected in 2020. An election year increases the likelihood that parties will be seeking innovative policy ideas (and decreases the time spent on other legislative activities), and it is therefore possible that legislators will be particularly responsive to information on such policies. 
 
 
 
@@ -347,11 +371,55 @@ Our next steps on this project include finalization of some of the research desi
 \section{Appendix} \label{Appendix}
 
 \subsection{Department of Education evidence tiers} \label{sec: DoE}
-\begin{figure}[!htb]
-\includegraphics{../figs/doe_tiers.png}
+
+\begin{figure}[H]
+\includegraphics[scale=0.65]{../figs/DoE_standards.png}
 \bigbreak
-\caption{DoE's tiers of evidence}
-\label{fig: doe_tiers}
+\caption{DoE's tiers of evidence - implementation}
+\label{fig: DoE_standards}
 \end{figure}
+
+\begin{figure}[H]
+\includegraphics{../figs/DoE_missing.png}
+\bigbreak
+\caption{DoE's guidelines on missingness}
+\label{fig: DoE_missing}
+\end{figure}
+
+\begin{figure}[H]
+\includegraphics[scale=0.65]{../figs/DoE_clusters.png}
+\bigbreak
+\caption{DoE's guidelines on clusters}
+\label{fig: DoE_clusters}
+\end{figure}
+
+\begin{figure}[H]
+\includegraphics[scale=0.65]{../figs/DoE_RDs.png}
+\bigbreak
+\caption{DoE's guidelines on RDs}
+\label{fig: DoE_RDs}
+\end{figure}
+
+\begin{figure}[H]
+\includegraphics{../figs/DoE_CACE_IV.png}
+\bigbreak
+\caption{DoE's guidelines on IVs and CACE}
+\label{fig: DoE_CACE_IV}
+\end{figure}
+
+
+\subsection{List of federal clearinghouses} \label{sec: clearinghouses}
+
+Other federal agencies have followed in the DoE's footsteps and have started building databases on the existing research on specific policies. Not all of these databases have downloadable comprehensive databases, or evidence standards as clear and well-defined as the DoE's. 
+
+\begin{itemize}
+	\item Department of Labor (DoL)'s CLEAR's clearinghouse: evidence on on labor topics 
+	\item Corporation for National and Community Service (CNCS): evidence on what works in national service, social innovation, civic engagement, and volunteering
+	\item U.S. Agency for International Development (USAID), YouthPower:  evidence on what works in youth and peacebuilding, youth and health, youth and agriculture, food security, and nutrition
+	\item US Departments of Agriculture and Defense's ClearingHouse for military family readiness: evidence on wide-ranging family and mental health issues. 
+	\item US Department of Health and Human services: multiple databases on programs whose purpose is to prevent and/or reduce delinquency or other problem behaviors in young people, teen pregnancy and substance prevention programs, etc.
+	\item US Department of Justice: multiple databases on drugs and substance abuse, juveniles, crime and crime prevention, victims and victimization, law enforcement, technology and forensics, corrections and reentry, and courts
+\end{itemize}
+
 
 \end{document} 
