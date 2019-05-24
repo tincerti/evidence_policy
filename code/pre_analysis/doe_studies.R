@@ -13,6 +13,13 @@ doe = read.csv('data/DoE/WWC-export-archive-2019-May-22-110152/Interventions_Stu
 ################################################################################
 # Locate eligible studies
 ################################################################################
+# Keep needed variables only
+doe = doe %>%
+  select(i_InterventionID, i_Intervention_Name, i_Protocol, i_Outcome_Domain, 
+         i_NumStudiesEligible, i_NumStudiesMeetingStandards, 
+         f_Finding_Rating, f_Is_Statistically_Significant, f_p_Value_Study, 
+         f_p_Value_WWC, f_ESSA_Rating, f_Effect_Size_Study, f_Effect_Size_WWC)
+
 # Create intervention-outcome level variable
 doe = mutate(doe,
       inter_outcome = paste(i_Intervention_Name, i_Outcome_Domain, sep = '_'))
@@ -92,11 +99,12 @@ stargazer(all_tiers_sig,
 ################################################################################
 # Additional exploratory work: Examine studies by topic
 ################################################################################
-# Filter datasets to topics
+# Filter datasets to topics or interventions
 lit = doe %>% filter(s_Topic_Literacy == 1)
 math = doe %>% filter(s_Topic_Mathematics == 1)
 science = doe %>% filter(s_Topic_Science == 1)
 behavior = doe %>% filter(s_Topic_Behavior == 1)
+success = doe %>% filter(inter_outcome == "Success for All®_Alphabetics")
 
 # Summarize outcome variables
 outcomes = doe %>% 
