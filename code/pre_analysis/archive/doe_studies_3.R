@@ -11,14 +11,10 @@ library(stargazer)
 doe = read.csv('data/DoE/WWC-export-archive-2019-May-22-110152/Interventions_Studies_And_Findings.csv')
 
 ################################################################################
-# General cleaning
+# Locate eligible studies
 ################################################################################
-# Create intervention-outcome level variable
-doe = mutate(doe,
-      inter_outcome = paste(i_Intervention_Name, i_Outcome_Domain, sep = '_'))
-
 # Create list of needed variables 
-vars = as.vector(c("i_Intervention_Name", "inter_outcome", "i_Protocol", "i_Outcome_Domain",
+vars = as.vector(c("i_Intervention_Name", "i_Protocol", "i_Outcome_Domain",
          "s_Intervention_Name", "s_Protocol", "s_StudyID", "s_Product_Name", 
          "s_Study_Design", "s_Study_Rating", "s_Publication", "s_Rating_Reason", 
          "s_Ineligibility_Reason", "s_interventionID",
@@ -28,53 +24,67 @@ vars = as.vector(c("i_Intervention_Name", "inter_outcome", "i_Protocol", "i_Outc
          "f_p_Value_WWC", "f_ESSA_Rating", "f_Effect_Size_Study", 
          "f_Effect_Size_WWC"))
 
-# Create reduced dataset
 doe_reduced = doe %>% select(one_of(vars)) 
 
-################################################################################
-# Locate interventions with high and low quality studies + significant findings
-################################################################################
+# Create intervention-outcome level variable
+doe = mutate(doe,
+      inter_outcome = paste(i_Intervention_Name, i_Outcome_Domain, sep = '_'))
+
 # Total number of intervention - outcome combinations
 intervention_outcome = length(unique(doe$inter_outcome))
 
-# Drop low evidence tiers, insignificant findings, and no intervention name
-doe_nolow = doe %>% 
-  filter(s_Study_Rating != "Does not meets WWC standards", 
-         f_Finding_Rating != "Does not meets WWC standards",
-         f_Is_Statistically_Significant == "True",
-         s_Study_Rating != "", 
-         f_Finding_Rating != "",
-         i_Intervention_Name != "") %>%
-  select(one_of(vars))
-
-# Create list of all interventions with high and middle evidence tiers
-all_tiers = doe_nolow %>%
-  group_by(inter_outcome, s_Study_Rating, f_Finding_Rating) %>%
+# Create list of all interventions with all three evidence tiers (findings)
+all_tiers_findings = doe %>%
+  filter(f_Finding_Rating != "" & i_Intervention_Name != "") %>%
+  group_by(inter_outcome, f_Finding_Rating) %>% 
   summarise(N = n()) %>%
   group_by(inter_outcome) %>% 
   summarise(tiers = n()) %>%
-  filter(tiers == 2)
+  filter(tiers == 3)
 
-all_tiers_list = as.vector(unlist(all_tiers$inter_outcome))
+all_tiers_findings = as.vector(unlist(all_tiers_findings$inter_outcome))
+
+# Create list of all interventions with all three evidence tiers (studies)
+all_tiers_studies = doe %>%
+  filter(s_Study_Rating != "") %>%
+  group_by(inter_outcome, s_Study_Rating) %>% 
+  summarise(N = n()) %>%
+  group_by(inter_outcome) %>% 
+  summarise(tiers = n()) %>%
+  filter(tiers == 3)
+
+all_tiers_studies = as.vector(unlist(all_tiers_studies$inter_outcome))
 
 # Add number of studies conducted to list of interventions with 3 evidence tiers
-all_tiers_studies = doe %>%
-  filter(inter_outcome %in% all_tiers_list) %>%
-  group_by(inter_outcome, s_Study_Rating, s_Study_Design, s_Publication,
-           s_Rating_Reason) %>%
+all_tiers_num_studies = doe %>%
+  filter(inter_outcome %in% all_tiers_findings) %>%
+  group_by(inter_outcome,
+           i_NumStudiesEligible, i_NumStudiesMeetingStandards) %>%
   summarise() %>%
   group_by(inter_outcome) %>%
   summarise(`Eligible Studies` = sum(i_NumStudiesEligible), 
             `Meet Standards` = sum(i_NumStudiesMeetingStandards)) %>%
   separate(inter_outcome, c("Intervention", "Outcome"), sep = "_")
 
+# Look for studies with SIGNIFICANT results in all evidence tiers
+all_tiers_sig = doe %>%
+  filter(inter_outcome %in% all_tiers_findings) %>%
+  group_by(inter_outcome, f_Finding_Rating, f_Is_Statistically_Significant,
+           i_NumStudiesEligible, i_NumStudiesMeetingStandards) %>%
+  summarise() %>%
+  arrange(inter_outcome, f_Finding_Rating, f_Is_Statistically_Significant) %>%
+  filter(f_Is_Statistically_Significant == "True") %>%
+  group_by(inter_outcome) %>%
+  summarise(`Eligible Studies` = mean(i_NumStudiesEligible), 
+            `Meet Standards` = mean(i_NumStudiesMeetingStandards),
+            tiers = n()) %>%
+  filter(tiers == 3) %>%
+  separate(inter_outcome, c("Intervention", "Outcome"), sep = "_") %>%
+  select("Intervention", "Outcome", "Eligible Studies", "Meet Standards")
+
 # Look at individual studies within interventions
 success = doe %>% 
   filter(inter_outcome == "Success for All®_Alphabetics") %>%
-  select(one_of(vars))
-
-odyssey = doe %>% 
-  filter(inter_outcome == "Odyssey® Math_General Mathematics Achievement") %>%
   select(one_of(vars))
 
 accelerated = doe %>% 
