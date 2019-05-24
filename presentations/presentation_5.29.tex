@@ -10,6 +10,9 @@
 \usepackage{tcolorbox}
 \usepackage[textfont={small}]{caption}
 
+\usepackage{caption}
+\captionsetup{skip=0pt,belowskip=-2mm}
+
     \setbeamercovered{invisible}
     \usepackage{tikz}   
     \usetikzlibrary{shapes,arrows}
@@ -183,6 +186,15 @@
 
 \textcolor{Cerulean}{366} unique intervention-outcome combinations. 
 
+\textcolor{Cerulean}{6} unique intervention-outcome combinations with studies in all-three evidence tiers. 
+\vspace{-8mm}
+\captionsetup{labelformat=empty}
+\input{../tables/all_tiers.tex}
+
+\textcolor{Cerulean}{1} unique intervention-outcome combination with \textcolor{Cerulean}{significant} studies in all-three evidence tiers. 
+\vspace{-8mm}
+\input{../tables/all_tiers_sig.tex}
+
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -200,10 +212,10 @@
 \end{itemize}
 \end{itemize}
 
+\vspace{5mm}
 \begin{table}[H]
 \centering
-\caption{Treatment arms: 2x2 factorial design}
-\vspace{-7mm}
+\caption{Treatment arms}
 \label{tab: arms} 
 \bigbreak
 \begin{tabular}{|l|l|l|l|l|}

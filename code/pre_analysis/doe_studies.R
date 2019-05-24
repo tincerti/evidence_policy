@@ -45,29 +45,35 @@ all_tiers_num_studies = doe %>%
 # Look for studies with SIGNIFICANT results in all evidence tiers
 all_tiers_sig = doe %>%
   filter(inter_outcome %in% all_tiers) %>%
-  group_by(inter_outcome, f_Finding_Rating, f_Is_Statistically_Significant) %>%
+  group_by(inter_outcome, f_Finding_Rating, f_Is_Statistically_Significant,
+           i_NumStudiesEligible, i_NumStudiesMeetingStandards) %>%
   summarise() %>%
   arrange(inter_outcome, f_Finding_Rating, f_Is_Statistically_Significant) %>%
   filter(f_Is_Statistically_Significant == "True") %>%
   group_by(inter_outcome) %>%
-  summarise(tiers = n()) %>%
+  summarise(`Eligible Studies` = mean(i_NumStudiesEligible), 
+            `Meet Standards` = mean(i_NumStudiesMeetingStandards),
+            tiers = n()) %>%
   filter(tiers == 3) %>%
-  separate(inter_outcome, c("Intervention", "Outcome"), sep = "_")
+  separate(inter_outcome, c("Intervention", "Outcome"), sep = "_") %>%
+  select("Intervention", "Outcome", "Eligible Studies", "Meet Standards")
 
 # Output tables to LaTeX
 stargazer(all_tiers_num_studies, 
           header=FALSE, 
           summary = FALSE,
-          column.sep.width = "2",
-          title = 'Interventions containing studies with all three evidence tiers',
+          #title = "Interventions with all three evidence tiers",
+          column.sep.width = "1mm",
+          font.size = "tiny",
           label = "all_tiers",
           out = "tables/all_tiers.tex")
 
 stargazer(all_tiers_sig, 
           header=FALSE, 
           summary = FALSE,
-          column.sep.width = "2",
-          title = 'Interventions containing significant studies with all three evidence tiers',
+          #title = "Interventions with significant results in all three evidence tiers",
+          column.sep.width = "1mm",
+          font.size = "footnotesize",
           label = "all_tiers",
           out = "tables/all_tiers_sig.tex")
 
