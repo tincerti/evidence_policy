@@ -357,44 +357,15 @@ Heterogenous treatment effects (CATEs)
 
 
 \begin{frame}[label= existing]
-\frametitle{Existing field/audit experimens}
-
-
-
-
-\begin{table}[]
-\caption{Audit experiments conducted with U.S. policy-makers}
+\frametitle{Existing field/audit experiments}
 \label{tab:audit_experiments} 
-\bigbreak
-\tiny
-\begin{tabular}{|l|l|l|l|l|l|l|l|l|}
-\hline
-Reference      
-& Federal/State                                                                                                                        & Arms 
-& Treatment                                                                                                           
-& Design                                                                                                                                                        & Outcome 
-& 3rd party?                                                                                                                                                                                                                                                  \\ \hline
- \citet{bergan2009does}        
-& \begin{tabular}[c]{@{}l@{}}State \\ (New Hampshire) \end{tabular}                                                  & 1
-& \begin{tabular}[c]{@{}l@{}} Contacted \\ by activists \end{tabular}                                           & \begin{tabular}[c]{@{}l@{}}Matched pairs \\ (multimembers districts)\\ Randomization within party\\ and district stratas\end{tabular}                         
-& Roll Call votes                                                                                            
-& \begin{tabular}[c]{@{}l@{}}Yes: coalition of \\ public health-related groups\\  organizing a grassroots email \\ lobbying campaign by activists\end{tabular}                                                                                              
-  \\ \hline
- \citet{butler2011politicians}       & \begin{tabular}[c]{@{}l@{}}4,859 state legislators\\ (44 states)\end{tabular}                                                        & 2x3          & \begin{tabular}[c]{@{}l@{}}Black or \\ white name and\\ party (D/R/blank)\\ of email sender\end{tabular}            & \begin{tabular}[c]{@{}l@{}}Block randomization\\ by state, chamber, \\ party, and whether\\ legislator is up for \\ reelection\end{tabular}                   & \begin{tabular}[c]{@{}l@{}}Rate of response\\ to emails\end{tabular}                                       & No                                                                                                                                                                                                                                                          \\ \hline
- \citet{kalla2016campaign}     & \begin{tabular}[c]{@{}l@{}}US Congress \\ 191 offices that had \\ not yet sponsored bill \end{tabular} & 1            & \begin{tabular}[c]{@{}l@{}}Reveal in email that\\ prospective attendees had\\ contributed to campaigns\end{tabular} & \begin{tabular}[c]{@{}l@{}}Blocks of 3 offices: closest\\ similarity on multiple \\ covariates\\ 1 treated, 2 control in each\\ of the 64 blocks\end{tabular} & \begin{tabular}[c]{@{}l@{}}Rate of response\\ to emails and\\ seniority of proposed\\ meeting\end{tabular} & \begin{tabular}[c]{@{}l@{}}Yes: liberal political organization \\ trying to set meetings between offices\\ and constituents who had previously \\ given to campaigns. \\ Goal of the meetings: rally support for \\ a bill banning a chemical.\end{tabular} 
- \\ \hline
-  \citet{doberstein2017whom}     & \begin{tabular}[c]{@{}l@{}}1,108 \\ Canadian bureaucrats\end{tabular} & 2x2           & \begin{tabular}[c]{@{}l@{}}Source of the\\ policy information \\(academic, think tanks, \\ research-based \\advocacy groups) \end{tabular} & \begin{tabular}[c]{@{}l@{}}Sources in \\treatment groups \\ were falsified \\  Pre treatment survey\\ for covariates \end{tabular} & \begin{tabular}[c]{@{}l@{}} Credibility assessment of \\each of 5 research articles \\ Based on summaries \\ And ranking of the 5 articles \end{tabular} & \begin{tabular}[c]{@{}l@{}}No.\end{tabular} 
-   \\ \hline
-  \citet{zelizer2018responsive}     & \begin{tabular}[c]{@{}l@{}}18 bills \\ 76 state legislators \end{tabular} & 1          & \begin{tabular}[c]{@{}l@{}}Assigned to in-person\\ briefings by a \\ committee staffer \end{tabular} & \begin{tabular}[c]{@{}l@{}}Treatment assigned \\ at legislator-bill \\ dyad level \\ block RA \end{tabular} & \begin{tabular}[c]{@{}l@{}} Cosponsorship of bills \\ Roll-call votes \end{tabular} & \begin{tabular}[c]{@{}l@{}}No.\end{tabular} 
-     \\ \hline
-  \citet{butler2011can}     & \begin{tabular}[c]{@{}l@{}}New Mexico State House \\ 70 legislators \end{tabular} & 1          & \begin{tabular}[c]{@{}l@{}}Received district-specific \\survey results on \\constituents' opinions \\on a bill \end{tabular} & \begin{tabular}[c]{@{}l@{}}35 matched pairs \end{tabular} & \begin{tabular}[c]{@{}l@{}} Cosponsorship of bills \\ Roll-call votes \end{tabular} & \begin{tabular}[c]{@{}l@{}}Use of University Logo \\ And email from \\ own researchers' address\end{tabular} 
-       \\ \hline
-  \citet{butler2012field}     & \begin{tabular}[c]{@{}l@{}}489 legislatives offices \\ 23 states \\ 1,036 letters \end{tabular} & 2x4        & \begin{tabular}[c]{@{}l@{}}Received letter \\ ethnicity of sender varied \\ 2 ethnicities \\  type of letter varied \\ 4 types (policy vs service, \\ level of knowledge) \end{tabular} & \begin{tabular}[c]{@{}l@{}}35 matched pairs \end{tabular} & \begin{tabular}[c]{@{}l@{}} Rate of response \\ Roll-call votes \end{tabular} & \begin{tabular}[c]{@{}l@{}}Yes: actual individuals \\ 200 students at BYU \\ Opened post office boxes \\ in their hometown \end{tabular} \\
-\hline
-\end{tabular}
-\end{table}
-
-
+\begin{itemize}
+	\item \textcolor{Cerulean}{Level}: 5 state and local, 1 federal \citep{kalla2016campaign}. Between 70 state legislators in 1 state to 4,859 states legislators in 44 states \citep{butler2011politicians}
+	\item \textcolor{Cerulean}{Treatments}: contact by activists, ethnicity of email sender, contact by donators, in-person briefings, send district-specific survey results
+	\item \textcolor{Cerulean}{Outcomes}:  roll call votes, rate of response to emails, seniority of meeting, co-sponsorship of bills
+	\item \textcolor{Cerulean}{Design}: block randomization on several covariates (state, chamber, party, reelection), matched pairs whenever possible
+	\item \textcolor{Cerulean}{Partnership with outside groups}: 3 yes, 3 no
+\end{itemize}
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
