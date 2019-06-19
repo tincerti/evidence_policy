@@ -213,30 +213,4 @@ Rogers, T.%
 \APACjournalVolNumPages{Political Behavior}{37}{3}{567--593}.
 \PrintBackRefs{\CurrentBib}
 
-\bibitem [\protect \citeauthoryear {%
-Rosenbluth%
-\ \BBA {} Shapiro%
-}{%
-Rosenbluth%
-\ \BBA {} Shapiro%
-}{%
-{\protect \APACyear {2018}}%
-}]{%
-rosenbluth2018responsible}
-\APACinsertmetastar {%
-rosenbluth2018responsible}%
-\begin{APACrefauthors}%
-Rosenbluth, F.%
-\BCBT {}\ \BBA {} Shapiro, I.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYear{2018}.
-\newblock
-\APACrefbtitle {Responsible Parties: Saving Democracy from Itself} {Responsible
-  parties: Saving democracy from itself}.
-\newblock
-\APACaddressPublisher{}{Yale University Press}.
-\PrintBackRefs{\CurrentBib}
-
 \end{thebibliography}
