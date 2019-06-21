@@ -82,6 +82,30 @@ Dunning, T.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Gerber%
+}{%
+Gerber%
+}{%
+{\protect \APACyear {1999}}%
+}]{%
+gerber1999populist}
+\APACinsertmetastar {%
+gerber1999populist}%
+\begin{APACrefauthors}%
+Gerber, E\BPBI R.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{1999}.
+\newblock
+\APACrefbtitle {The populist paradox: Interest group influence and the promise
+  of direct legislation} {The populist paradox: Interest group influence and
+  the promise of direct legislation}.
+\newblock
+\APACaddressPublisher{}{Princeton University Press}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Incerti%
 }{%
 Incerti%
@@ -211,6 +235,52 @@ Rogers, T.%
   showing that they are}.{\BBCQ}
 \newblock
 \APACjournalVolNumPages{Political Behavior}{37}{3}{567--593}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Smith%
+}{%
+Smith%
+}{%
+{\protect \APACyear {2002}}%
+}]{%
+smith2002ballot}
+\APACinsertmetastar {%
+smith2002ballot}%
+\begin{APACrefauthors}%
+Smith, M\BPBI A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2002}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Ballot initiatives and the democratic citizen} {Ballot
+  initiatives and the democratic citizen}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Politics}{64}{3}{892--903}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Stratmann%
+}{%
+Stratmann%
+}{%
+{\protect \APACyear {2004}}%
+}]{%
+stratmann2004effectiveness}
+\APACinsertmetastar {%
+stratmann2004effectiveness}%
+\begin{APACrefauthors}%
+Stratmann, T.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2004}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {The effectiveness of money in ballot measure campaigns}
+  {The effectiveness of money in ballot measure campaigns}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{S. Cal. L. Rev.}{78}{}{1041}.
 \PrintBackRefs{\CurrentBib}
 
 \end{thebibliography}
