@@ -159,7 +159,7 @@
 
 \section{Introduction} \label{sec:Introduction}
 
-One of the most direct ways in which citizens can produce policy is through pure democratic channels such as citizens initiatives, popular consultation, and ballot initiatives. Ballot initiatives have been hailed as an efficient direct democracy mechanism, providing citizens with a much-needed voice in policy making and politics. Defenders of ballot initiatives claim that they provide a way for citizens to voice their opinions and produce policies with less interference from parties and special interests [CITE]. Others caution against the excesses of direct democracy and claim that special interest capture also operates in this system [CITE]. Doubts about voters' competency are also central to whether ballot initiatives lead to adoption of good policies [CITE]. The need for technical knowledge may be larger on a ballot initiative than in a traditional partisan election as fewer heuristic cues are available. 
+One of the most direct ways in which citizens can produce policy is through pure democratic channels such as citizens initiatives, popular consultation, and ballot initiatives. Ballot initiatives have been hailed as an efficient direct democracy mechanism, providing citizens with a much-needed voice in policy making and politics. Defenders of ballot initiatives claim that they provide a way for citizens to voice their opinions and produce policies with less interference from parties and special interests \citep{cronin1999direct}. Others caution against the excesses of direct democracy and claim that special interest capture also operates in this system \citep{rosenbluth2018responsible}. Doubts about voters' competency are also central to whether ballot initiatives lead to adoption of good policies \citep{achen2017democracy}. The need for technical knowledge may be larger on a ballot initiative than in a traditional partisan election as fewer heuristic cues are available. 
 
 We therefore seek to determine how voters use information when asked to vote directly on a supposedly non-partisan, technical policy proposal placed on a ballot initiative. Are voters able to distinguish between the different levels of information quality and bias that stem from varying sources of information? Relatedly, do ballot initiatives actually lead to less interference from parties and special interests, or are voters equally swayed by special interests cues and objective policy research? 
 
@@ -174,7 +174,7 @@ The paper will contribute to the growing literature on the effect of campaign ou
 
 \subsection{Science, research and democracy}  \label{sec: democracy}
 
-This project speaks to broader theoretical questions on the functioning of our current democracies, and in particular the potential gaps between reality and the ideals of deliberative democracies. We hope therefore hope to contribute to ongoing discussions within philosophy of science, such as perceptions of research methods and consumption of scientific evidence outside of the academy. \\
+This project speaks to broader theoretical questions on the functioning of our current democracies, and in particular the potential gaps between reality and the ideals of deliberative democracies. We hope to contribute to ongoing discussions within philosophy of science, such as perceptions of research methods and consumption of scientific evidence outside of the academy. \\
 
 [Tensions and relationships between science and democracy]
 
@@ -221,7 +221,7 @@ We will provide voters with different randomized pieces of information encouragi
 
 \subsection{Treatment details} \label{sec:Treatment}
 
-This information provision could be done through mail (a postcard), canvassing, phone calls, text messaging, or emails. Postcards, text messaging, or email would provide allow for larger sample sizes than canvassing or phone calls. Extant literature on fliers as a persuasive source of information finds null treatment effects \citep{kalla2018minimal, incerti2019corruption}. However, it may be possible to improve upon previous field experiments by incorporating estimates of non-compliance rates into our experimental design, allowing us to estimate complier average causal effects (CACE) in addition to intent-to-treat (ITT) effects. For example, fliers could contain a link to a website with the informational treatment. We would then be able to use the percentage of individuals who received fliers that also accessed the website as an estimate of the proportion of compliers. This would allow us to measure the effect of \textit{reading} the informational treatment, rather than the effect of being assigned to the treatment group receiving the information. 
+This information provision could be done through mail (a postcard), canvassing, phone calls, text messaging, or emails. Postcards, text messaging, or email would allow for larger sample sizes than canvassing or phone calls. Extant literature on fliers as a persuasive source of information finds null treatment effects \citep{kalla2018minimal, incerti2019corruption}. However, it may be possible to improve upon previous field experiments by incorporating estimates of non-compliance rates into our experimental design, allowing us to estimate complier average causal effects (CACE) in addition to intent-to-treat (ITT) effects. For example, fliers could contain a link to a website with the informational treatment (ideally with some sort of monetary incentive, such as the possibility to enter a lottery). We would then be able to use the percentage of individuals who received fliers that also accessed the website as an estimate of the proportion of compliers. This would allow us to measure the effect of \textit{reading} the informational treatment, rather than the effect of being assigned to the treatment group receiving the information. 
 
 Canvassing would provide us with less power, less geographic reach, and would likely be costlier. However, direct contact has been shown to elicit larger treatment effects than other forms of communication \citep{kalla2018minimal}.
 
@@ -267,23 +267,22 @@ Elimination of Open Ended Alimony & Legal & NA & No & No \\
 
 \subsection{Estimation of treatment effects} \label{sec:treatment_effects}
 
-We intend to use block random assignment in order to increase the precision of our treatment effect estimates as well as to facilitate (preregistered) estimation of heterogenous treatment effects. Treatment effect estimates will therefore be calculated as the difference-in-means of the response rate from subjects in each of treatment groups and the response rate from subjects in the control group in each block, weighted by the number of subjects in each block relative to the total number of subjects. More formally, average treatment effects will be estimated as:
+We intend to use clustered random assignment rather than individual-level randomization, i.e assigning voting precints to treatment and control rather than individual nested within them. Following \citet{arceneaux2005using}'s advice, we argue that such an approach is not only easier and potentially less expensive to implement, it also opens the door to clearer analyses without the need for survey data (information on individual voting decisions is not publicly available).
 
-\begin{center}
-$ATE = \sum_{j = 1}^{J} \frac{N_j}{N}ATE_j$
-\end{center}
 
-\noindent
-where $J$ is the number of blocks, blocks are indexed by $j$, and $\frac{N_j}{N}$ represents the share of subjects who belong to block $j$. In practice, these differences-in-means will be calculated using a weighted least squares regression of response rate on treatment assignment, with weights corresponding to the inverse probability of treatment for each unit (IPW). All p-values will be calculated using randomization inference.
+%Treatment effect estimates will therefore be calculated as the difference-in-means of the response rate from subjects in each of treatment groups and the response rate from subjects in the control group in each block, weighted by the number of subjects in each block relative to the total number of subjects. More formally, average treatment effects will be estimated as:
 
-\subsection{Heterogenous treatment effects} \label{sec: hte}
+%\begin{center}
+%$ATE = \sum_{j = 1}^{J} \frac{N_j}{N}ATE_j$
+%\end{center}
 
-In addition, we will test for heterogenous treatment by party affiliation and educational attainment. Our test will take the form of regressing our outcome variable on treatments conditional upon the data representing the covariate of interest. In other words, we will split our sample by subject attributes (party and educational attainment), then estimate conditional average treatment effects (CATEs) separately for each of these attributes. For example, to test for heterogenous effects by party, we will regress outcomes on treatments for all voters in each party. Following estimation of CATEs, we will use randomization inference to test the null hypothesis that CATEs in both groups (e.g. Democrat and Republican) equal to the ATE.
+%\noindent
+%where $J$ is the number of blocks, blocks are indexed by $j$, and $\frac{N_j}{N}$ represents the share of subjects who belong to block $j$. In practice, these differences-in-means will be calculated using a weighted least squares regression of response rate on treatment assignment, with weights corresponding to the inverse probability of treatment for each unit (IPW). All p-values will be calculated using randomization inference.
 
-We recognize that the search for heterogenous treatment effects often suffers from the multiple comparisons problem. In a dataset with a large number of covariates, if a large enough number of subgroups is examined, it is highly likely that statistically significant interaction effects will emerge merely by chance. In other words, the more significance tests are performed, the higher the likelihood of falsely rejecting the null hypothesis at least once. We minimize this risk be preregistering our heterogenous effects of interests, as well as by performing multiple comparisons corrections using Bonferroni, Holm-Bonferroni, and Benjamin-Hochburg adjustment procedures.
+
 
 \subsection{Power analysis} \label{sec: power}
-
+\citet{bloom1999using} and \citet{raudenbush1997statistical} provided excellent illustrations of power analysis for cluster random assignment.
 
 \section{Survey experiment} \label{sec:Design survey}
 
@@ -299,13 +298,15 @@ The ballot initiative setting would allow us to create a survey experiment in wh
 
 \section{Natural experiment} \label{sec:natural}
 
-The idea would be to use a real-life variation of information supply. Ex.: data on billboards, with their contents and where exactly they were put on, or a report sent to some precinct but not other. Info provision will probably not be random, so we would need to do a diff and diff (precinct with billboard ? precinct without billboard, but which other difference? Vote on another measure, vote in previous elections, opinion polls on the measure before billboards went up, early voting)? \\
+We are keeping the possibility of conduction a natural experiment on this topic open at this point, even though we have not found a specific workable design yet. The idea would be to use a real-life variation of information supply (such as data on billboards or a report sent to some precincts). The information provision will very likely not be random in this case, but we could rely on methods such as differences and differences to measure the effect of information provision on an outcome measure to be defined (vote on other measures, in previous elections, early voting, opinion polls). 
 
-[SIGNATURE REQUIREMENT THRESHOLD AS DISCONTINUITY: LET'S THINK ABOUT THIS. MAYBE TALK TO FREDRIK.]
+We could also potentially leverage the signature requirement thresholds to put a ballot initiative on the ballot as a discontinuity (arguing that proposals just below the threshold are substantially the same as proposals just above the threshold, and measuring the causal effect of putting a proposal to a vote through a RD design. This would probably be another project, however, since we do not see how we can use information provision as a treatment in that case. 
+
+
 
 \section{Conclusion} \label{sec:Conclusion}
 
-Our next steps on this project include finalization of some of the research design decisions that remain open (i.e. choice of ballot initiative, location and creation of informational messages, possible partnership with organizations). We hope to finalize these details over the summer and to preregister a final Pre-Analysis-Plan with EGAP by the end of 2019. We would then conduct the experiment immediately prior to the 2020 California state general elections.
+Our next steps on this project include finalization of some of the research design decisions that remain open (i.e. choice of ballot initiative, location and creation of informational messages, possible partnership with organizations to send the messages). We hope to finalize these details over the summer and to preregister a final Pre-Analysis-Plan with EGAP by the end of 2019. We would then conduct the experiment immediately prior to the 2020 California state general elections.
 
 
 

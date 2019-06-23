@@ -1,6 +1,33 @@
 \begin{thebibliography}{}
 
 \bibitem [\protect \citeauthoryear {%
+Achen%
+\ \BBA {} Bartels%
+}{%
+Achen%
+\ \BBA {} Bartels%
+}{%
+{\protect \APACyear {2017}}%
+}]{%
+achen2017democracy}
+\APACinsertmetastar {%
+achen2017democracy}%
+\begin{APACrefauthors}%
+Achen, C\BPBI H.%
+\BCBT {}\ \BBA {} Bartels, L\BPBI M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2017}.
+\newblock
+\APACrefbtitle {Democracy for realists: Why elections do not produce responsive
+  government} {Democracy for realists: Why elections do not produce responsive
+  government}\ (\BVOL~4).
+\newblock
+\APACaddressPublisher{}{Princeton University Press}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Arceneaux%
 }{%
 Arceneaux%
@@ -50,6 +77,59 @@ Arceneaux, K.%
   campaign messages: Evidence from two field experiments}.{\BBCQ}
 \newblock
 \APACjournalVolNumPages{American Politics Research}{38}{1}{54--83}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Bloom%
+, Bos%
+\BCBL {}\ \BBA {} Lee%
+}{%
+Bloom%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {1999}}%
+}]{%
+bloom1999using}
+\APACinsertmetastar {%
+bloom1999using}%
+\begin{APACrefauthors}%
+Bloom, H\BPBI S.%
+, Bos, J\BPBI M.%
+\BCBL {}\ \BBA {} Lee, S\BHBI W.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1999}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Using cluster random assignment to measure program
+  impacts: Statistical implications for the evaluation of education programs}
+  {Using cluster random assignment to measure program impacts: Statistical
+  implications for the evaluation of education programs}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Evaluation Review}{23}{4}{445--469}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Cronin%
+}{%
+Cronin%
+}{%
+{\protect \APACyear {1999}}%
+}]{%
+cronin1999direct}
+\APACinsertmetastar {%
+cronin1999direct}%
+\begin{APACrefauthors}%
+Cronin, T\BPBI E.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{1999}.
+\newblock
+\APACrefbtitle {Direct democracy: The politics of initiative, referendum, and
+  recall} {Direct democracy: The politics of initiative, referendum, and
+  recall}.
+\newblock
+\APACaddressPublisher{}{iUniverse}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -209,6 +289,30 @@ McCaffery, J.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Raudenbush%
+}{%
+Raudenbush%
+}{%
+{\protect \APACyear {1997}}%
+}]{%
+raudenbush1997statistical}
+\APACinsertmetastar {%
+raudenbush1997statistical}%
+\begin{APACrefauthors}%
+Raudenbush, S\BPBI W.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1997}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Statistical analysis and optimal design for cluster
+  randomized trials.} {Statistical analysis and optimal design for cluster
+  randomized trials.}{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Psychological Methods}{2}{2}{173}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Rogers%
 \ \BBA {} Middleton%
 }{%
@@ -235,6 +339,32 @@ Rogers, T.%
   showing that they are}.{\BBCQ}
 \newblock
 \APACjournalVolNumPages{Political Behavior}{37}{3}{567--593}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Rosenbluth%
+\ \BBA {} Shapiro%
+}{%
+Rosenbluth%
+\ \BBA {} Shapiro%
+}{%
+{\protect \APACyear {2018}}%
+}]{%
+rosenbluth2018responsible}
+\APACinsertmetastar {%
+rosenbluth2018responsible}%
+\begin{APACrefauthors}%
+Rosenbluth, F.%
+\BCBT {}\ \BBA {} Shapiro, I.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2018}.
+\newblock
+\APACrefbtitle {Responsible Parties: Saving Democracy from Itself} {Responsible
+  parties: Saving democracy from itself}.
+\newblock
+\APACaddressPublisher{}{Yale University Press}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
