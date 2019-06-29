@@ -109,6 +109,37 @@ Bloom, H\BPBI S.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Carman%
+\ \protect \BOthers {.}}{%
+Carman%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2015}}%
+}]{%
+carman2015effectiveness}
+\APACinsertmetastar {%
+carman2015effectiveness}%
+\begin{APACrefauthors}%
+Carman, K\BPBI L.%
+, Mallery, C.%
+, Maurer, M.%
+, Wang, G.%
+, Garfinkel, S.%
+, Yang, M.%
+\BDBL {}others%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2015}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Effectiveness of public deliberation methods for
+  gathering input on issues in healthcare: results from a randomized trial}
+  {Effectiveness of public deliberation methods for gathering input on issues
+  in healthcare: results from a randomized trial}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Social Science \& Medicine}{133}{}{11--20}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Cronin%
 }{%
 Cronin%
@@ -235,6 +266,61 @@ Kalla, J\BPBI L.%
   field experiments}.{\BBCQ}
 \newblock
 \APACjournalVolNumPages{American Political Science Review}{112}{1}{148--166}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Knobloch%
+, Gastil%
+, Feller%
+, Richards%
+\BCBL {}\ \protect \BOthers {.}}{%
+Knobloch%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2014}}%
+}]{%
+knobloch2014empowering}
+\APACinsertmetastar {%
+knobloch2014empowering}%
+\begin{APACrefauthors}%
+Knobloch, K\BPBI R.%
+, Gastil, J.%
+, Feller, T.%
+, Richards, R\BPBI C.%
+\BCBL {}\ \BOthersPeriod {.}\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2014}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Empowering citizen deliberation in direct democratic
+  elections: A field study of the 2012 Oregon Citizens? Initiative Review}
+  {Empowering citizen deliberation in direct democratic elections: A field
+  study of the 2012 oregon citizens? initiative review}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Field Actions Science Reports. The journal of field
+  actions}{}{Special Issue 11}{}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Landemore%
+}{%
+Landemore%
+}{%
+{\protect \APACyear {2012}}%
+}]{%
+landemore2012many}
+\APACinsertmetastar {%
+landemore2012many}%
+\begin{APACrefauthors}%
+Landemore, H\BPBI E.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2012}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Why the many are smarter than the few and why it
+  matters} {Why the many are smarter than the few and why it matters}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of public deliberation}{8}{1}{7}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
