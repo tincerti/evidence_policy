@@ -136,7 +136,7 @@ stargazer(approved_latex,
           font.size = "scriptsize",
           column.sep.width = "0pt",
           title = 'All currently approved 2020 ballot initiatives by state',
-          label = "state_initiatives",
+          label = "tab: state_initiatives",
           out = "tables/state_initiatives_approved.tex")
 
 ################################################################################
