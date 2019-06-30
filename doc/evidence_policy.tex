@@ -224,11 +224,11 @@ However, \citet{kalla2018minimal} find suggestive evidence that campaign contact
 
 \section{Field experiment} \label{sec:Design field}
 
-\subsection{Treatment groups and randomization} \label{sec:Treatment}
+\subsection{Treatment groups and randomization} \label{sec: treatment_groups}
 
 We will provide voters with different randomized pieces of information encouraging either a ``Yes'' or ``No'' vote on a 2020 California ballot initiative. We will have three treatment groups in total: (1) placebo, (2) business/special interest group information, and (3) policy research information. Three treatment groups  allows us to have one null/zero treatment group (placebo), one positive treatment group, and one negative treatment, facilitating detection of differences between groups.
 
-\subsection{Treatment details} \label{sec:Treatment}
+\subsection{Treatment details} \label{sec: treatment}
 
 This information provision could be done through mail (a postcard), canvassing, phone calls, text messaging, or emails. Postcards, text messaging, or email would allow for larger sample sizes than canvassing or phone calls. Extant literature on fliers as a persuasive source of information finds null treatment effects \citep{kalla2018minimal, incerti2019corruption}, but the evidence in the context of ballot initiatives is more mixed. 
 
@@ -248,35 +248,7 @@ As our outcome is ``Yes" vote and we will provide one pro-initiative treatment a
 
 We seek to launch this experiment during the 2020 California statewide general election. An on-year election will give us access to a larger sample of likely voters in total, as well as a greater percentage of voters without strong priors on the specific proposal. Off-year voters tend to be more informed about specific ballot measures and therefore have stronger priors and are less susceptible to informational campaigns. 
 
-Our ideal ballot measure would involve a policy with a scientific or policy research consensus on its overall merit or demerit. This would likely represent a technical subject on which people have relatively weak priors. Policy issues such as health care or housing could work very well for our purposes. A list of 2020 California ballot measures or those approved by yet to meet the minimum signature threshold eligible or requiring additional is provided in \autoref{tab: initiatives}.
-
-\begin{table}[!htbp] \centering 
-  \caption{Potential 2020 California ballot initiatives as of June 2019}
-  \label{tab: initiatives} 
-  \small
-\begin{tabular}{@{\extracolsep{0pt}} cccccccc} 
-\\[-1.8ex]\hline 
-\hline \\[-1.8ex] 
- Initiative & Topic & Endorsement & Approved & Ideal \\ 
-\hline \\[-1.8ex] 
-Jury trials for child custody & Legal & NA & Yes & No \\
-Rental Affordability Act & Housing & NA & No & Maybe \\
-Risk-based bail & Criminality & NA & No & No \\
-Number of candidates in general elections & Politics & NA & No & No \\
-GMO ban (SI) & Health & NA & No & Maybe \\
-Fluoride ban (SI) & Health & NA & No & Maybe \\
-Remove school vaccine requirement (SI) & Health & NA & No & Maybe \\
-Supermajority for revenue measures & Politics & NA & No & No \\
-Amend three strikes law & Criminality & NA & No & Maybe \\
-Felony for some misdemeaners & Criminality & NA & No & Maybe \\
-Confinement of farm animals & Agriculture & NA & No & No \\
-Estate tax for college aid & Tax \& Education & NA & No & Maybe \\
-No changes on approved bond spending & Politics & NA & No & Maybe \\
-Elimination of Open Ended Alimony & Legal & NA & No & No \\
-\hline \\[-1.8ex] 
-\end{tabular} 
-\end{table} 
-\FloatBarrier
+Our ideal ballot measure would involve a policy with a scientific or policy research consensus on its overall merit or demerit. This would likely represent a technical subject on which people have relatively weak priors. Policy issues such as health care or housing could work very well for our purposes. A list of all approved 2020 state ballot initiatives can be found in \autoref{tab: state_initiatives}, and a list of approved and potential 2020 California ballot measures is provided in \autoref{tab: initiatives}.
 
 \subsection{Estimation of treatment effects} \label{sec:treatment_effects}
 
@@ -344,10 +316,38 @@ Our next steps on this project include finalization of some of the research desi
 \setcounter{figure}{0}
 \renewcommand\thetable{\Alph{section}.\arabic{table}}
 \renewcommand\thefigure{\Alph{section}.\arabic{figure}}
+
 \section{Appendix} \label{Appendix}
 
+\input{../tables/state_initiatives_approved.tex}
 
-
+\begin{table}[!htbp] \centering 
+  \caption{Potential 2020 California ballot initiatives as of June 2019}
+  \label{tab: initiatives} 
+  \small
+\begin{tabular}{@{\extracolsep{0pt}} cccccccc} 
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+ Initiative & Topic & Endorsement & Approved & Ideal \\ 
+\hline \\[-1.8ex] 
+Jury trials for child custody & Legal & NA & Yes & No \\
+Rental Affordability Act & Housing & NA & No & Maybe \\
+Risk-based bail & Criminality & NA & No & No \\
+Number of candidates in general elections & Politics & NA & No & No \\
+GMO ban (SI) & Health & NA & No & Maybe \\
+Fluoride ban (SI) & Health & NA & No & Maybe \\
+Remove school vaccine requirement (SI) & Health & NA & No & Maybe \\
+Supermajority for revenue measures & Politics & NA & No & No \\
+Amend three strikes law & Criminality & NA & No & Maybe \\
+Felony for some misdemeaners & Criminality & NA & No & Maybe \\
+Confinement of farm animals & Agriculture & NA & No & No \\
+Estate tax for college aid & Tax \& Education & NA & No & Maybe \\
+No changes on approved bond spending & Politics & NA & No & Maybe \\
+Elimination of Open Ended Alimony & Legal & NA & No & No \\
+\hline \\[-1.8ex] 
+\end{tabular} 
+\end{table} 
+\FloatBarrier
 
 
 \end{document} 
