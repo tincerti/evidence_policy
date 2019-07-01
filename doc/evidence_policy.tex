@@ -224,9 +224,27 @@ However, \citet{kalla2018minimal} find suggestive evidence that campaign contact
 
 \section{Field experiment} \label{sec:Design field}
 
-\subsection{Treatment groups and randomization} \label{sec: treatment_groups}
+\subsection{Treatment groups} \label{sec: treatment_groups}
 
 We will provide voters with different randomized pieces of information encouraging either a ``Yes'' or ``No'' vote on a 2020 California ballot initiative. We will have three treatment groups in total: (1) placebo, (2) business/special interest group information, and (3) policy research information. Three treatment groups  allows us to have one null/zero treatment group (placebo), one positive treatment group, and one negative treatment, facilitating detection of differences between groups.
+
+\subsection{Randomization} \label{sec: treatment_groups}
+
+We intend to use clustered random assignment rather than individual-level randomization (i.e assigning voting precincts to treatment and control rather than individuals nested within them). \citet{arceneaux2005using} argues that clustered random assignment is simpler to implement, less expensive, and allows for direct measurement of voting outcomes without reliance on survey data.
+
+While implementation of clustered random assignment may be simpler and allows for direct measurement of voting outcomes, analysis is more complex. If cluster size covaries with potential outcomes, the classic difference-in-means estimator will be biased. We will therefore calculate the ATE using both: (1) the classic difference-in-means estimator (while examining whether the estimated ATE changes when restricting analysis to large and small clusters), and (2) by measuring the difference in total outcomes. The latter is defined as:
+
+$$\hat{ATE} = \frac{K_C + K_T}{N}\left(\frac{\sum Y_i(1)|d_i = 1}{K_T} - \frac{\sum Y_i(0)|d_i = 0}{K_C}\right)$$
+
+\noindent
+where $K_C$ is the number of clusters assigned to control, $K_T$ is the number of clusters assigned to treatment, $N$ is the number of total clusters, and $Y_i(1)|d_i = 1$ and $Y_i(0)|d_i = 0$ refer to potential outcomes in treatment and control clusters, respectively. Standard errors will be calculated as:
+
+$$ \hat{SE}({\hat{ATE}}) = \sqrt{\frac{N\hat{Var}(\bar{Y}_j(0))}{K(N-m)} + \frac{N\hat{Var}(\bar{Y}_j(1))}{{Km}}} $$
+
+\noindent
+where $K$ refers to the number of clusters, $N$ refers to the total number of subjects, and $m$ refers to the total number of subjects assigned to treatment. 
+
+Cluster-random assignment often results in a loss of statistical power. This decrease in precision increases as the difference in potential outcomes between clusters increases. To compensate, we will attempt to increase the number of clusters in our sample to the maximum extent possible while using clusters of similar size. If it becomes impossible to use clusters of similar size, we will conduct block random assignment by cluster size. We will also adjust for predictive covariates such as past voting behavior, age, gender, party registration, etc. In practice, we will therefore estimate treatment effects and standard errors using OLS regression with cluster robust standard errors and inclusive of predictive covariates, in addition to the baseline measurements described above. [Would there be anything wrong with using the most predictive covariates from the survey experiment for covariate adjustment in the field experiment?]
 
 \subsection{Treatment details} \label{sec: treatment}
 
@@ -249,13 +267,6 @@ As our outcome is ``Yes" vote and we will provide one pro-initiative treatment a
 We seek to launch this experiment during the 2020 California statewide general election. An on-year election will give us access to a larger sample of likely voters in total, as well as a greater percentage of voters without strong priors on the specific proposal. Off-year voters tend to be more informed about specific ballot measures and therefore have stronger priors and are less susceptible to informational campaigns. 
 
 Our ideal ballot measure would involve a policy with a scientific or policy research consensus on its overall merit or demerit. This would likely represent a technical subject on which people have relatively weak priors. Policy issues such as health care or housing could work very well for our purposes. A list of all approved 2020 state ballot initiatives can be found in \autoref{tab: state_initiatives}, and a list of approved and potential 2020 California ballot measures is provided in \autoref{tab: initiatives}.
-
-\subsection{Estimation of treatment effects} \label{sec:treatment_effects}
-
-We intend to use clustered random assignment rather than individual-level randomization, i.e assigning voting precincts to treatment and control rather than individual nested within them. Following \citet{arceneaux2005using}'s advice, we argue that such an approach is not only easier and potentially less expensive to implement, it also opens the door to clearer analyses without the need for survey data (information on individual voting decisions is not publicly available).
-To compensate for the loss of statistical power involved with the use of clusters, we will use covariates such as past voting behaviours, age, gender and party registration (and all other variables available in the voters files that are in any way predictive of one's vote on a ballot initiative).
-
-
 
 
 %Treatment effect estimates will therefore be calculated as the difference-in-means of the response rate from subjects in each of treatment groups and the response rate from subjects in the control group in each block, weighted by the number of subjects in each block relative to the total number of subjects. More formally, average treatment effects will be estimated as:

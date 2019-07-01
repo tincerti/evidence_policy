@@ -140,6 +140,33 @@ Carman, K\BPBI L.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Catterall%
+\ \BBA {} Brizendine%
+}{%
+Catterall%
+\ \BBA {} Brizendine%
+}{%
+{\protect \APACyear {1985}}%
+}]{%
+catterall1985proposition}
+\APACinsertmetastar {%
+catterall1985proposition}%
+\begin{APACrefauthors}%
+Catterall, J\BPBI S.%
+\BCBT {}\ \BBA {} Brizendine, E.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1985}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Proposition 13: Effects on high school curricula,
+  1978-1983} {Proposition 13: Effects on high school curricula,
+  1978-1983}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{American Journal of Education}{93}{3}{327--351}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Cronin%
 }{%
 Cronin%
@@ -497,6 +524,33 @@ Stratmann, T.%
   {The effectiveness of money in ballot measure campaigns}.{\BBCQ}
 \newblock
 \APACjournalVolNumPages{S. Cal. L. Rev.}{78}{}{1041}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Wasi%
+\ \BBA {} White%
+}{%
+Wasi%
+\ \BBA {} White%
+}{%
+{\protect \APACyear {2005}}%
+}]{%
+wasi2005property}
+\APACinsertmetastar {%
+wasi2005property}%
+\begin{APACrefauthors}%
+Wasi, N.%
+\BCBT {}\ \BBA {} White, M\BPBI J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2005}{}{}.
+\newblock
+\APACrefbtitle {Property tax limitations and mobility: The lock-in effect of
+  California's Proposition 13} {Property tax limitations and mobility: The
+  lock-in effect of california's proposition 13}\ \APACbVolEdTR{}{\BTR{}}.
+\newblock
+\APACaddressInstitution{}{National Bureau of Economic Research}.
 \PrintBackRefs{\CurrentBib}
 
 \end{thebibliography}
