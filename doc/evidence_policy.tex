@@ -182,7 +182,7 @@ This project speaks to broader theoretical questions on the functioning of our c
 
 \subsection{Ballot initiatives and direct democracy}
 
-Direct democracy at the US state-level is extremely prevalent yet understudied. 31 of 50 states permit referendums of some kind, and 24 permit citizen initiatives \citep{leduc2003politics}. Of these 24 states, California engages in more individual exercises of direct democracy than any other. Over the past two decades California has voted on X ballot initiatives at the statewide level [compare to other states], and the number of ballot initiatives per election has increased rapidly over the same period.
+Direct democracy at the US state-level is extremely prevalent yet understudied. 31 of 50 states permit referendums of some kind, and 24 permit citizen initiatives \citep{leduc2003politics}. Of these 24 states, California engages in more individual exercises of direct democracy than any other. Since 1912 California has voted on 376 ballot initiatives at the statewide level, with a sharp rise over the past 20 years, with 139 propositions on the ballot since 1995 (only Oregon comes close to matching these numbers).
 
 \bigbreak
 
@@ -237,7 +237,7 @@ While implementation of clustered random assignment may be simpler and allows fo
 $$\hat{ATE} = \frac{K_C + K_T}{N}\left(\frac{\sum Y_i(1)|d_i = 1}{K_T} - \frac{\sum Y_i(0)|d_i = 0}{K_C}\right)$$
 
 \noindent
-where $K_C$ is the number of clusters assigned to control, $K_T$ is the number of clusters assigned to treatment, $N$ is the number of total clusters, and $Y_i(1)|d_i = 1$ and $Y_i(0)|d_i = 0$ refer to potential outcomes in treatment and control clusters, respectively. Standard errors will be calculated as:
+where $K_C$ is the number of clusters assigned to control, $K_T$ is the number of clusters assigned to treatment, $N$ is the number of subjects in the analysis, and $Y_i(1)|d_i = 1$ and $Y_i(0)|d_i = 0$ refer to potential outcomes in treatment and control clusters, respectively. Standard errors will be calculated as:
 
 $$ \hat{SE}({\hat{ATE}}) = \sqrt{\frac{N\hat{Var}(\bar{Y}_j(0))}{K(N-m)} + \frac{N\hat{Var}(\bar{Y}_j(1))}{{Km}}} $$
 
@@ -245,6 +245,10 @@ $$ \hat{SE}({\hat{ATE}}) = \sqrt{\frac{N\hat{Var}(\bar{Y}_j(0))}{K(N-m)} + \frac
 where $K$ refers to the number of clusters, $N$ refers to the total number of subjects, and $m$ refers to the total number of subjects assigned to treatment. 
 
 Cluster-random assignment often results in a loss of statistical power. This decrease in precision increases as the difference in potential outcomes between clusters increases. To compensate, we will attempt to increase the number of clusters in our sample to the maximum extent possible while using clusters of similar size. If it becomes impossible to use clusters of similar size, we will conduct block random assignment by cluster size. We will also adjust for predictive covariates such as past voting behavior, age, gender, party registration, etc. In practice, we will therefore estimate treatment effects and standard errors using OLS regression with cluster robust standard errors and inclusive of predictive covariates, in addition to the baseline measurements described above. [Would there be anything wrong with using the most predictive covariates from the survey experiment for covariate adjustment in the field experiment?]
+
+
+A potential issue with cluster random assignment at the precinct level in California is the adoption of the Voter?s Choice Act in 2016. Under the Voter's Choice Act, voters can go to any polling place in their county and can vote through mail at the county level. 5 counties opted in the system for the 2018 elections and 5 more counties are expected to do so for the 2020 elections (out of a total of 58 counties). For these counties, it means that we will not be able to get precinct-level data. We will therefore need to exclude those 10 counties (which account for 48.8\% of the California population) from our analysis. From our initial, quick look, these counties seem to be evenly distributed across partisan lines. If this methodological choice turns out to be hard to defend, we can also give up on California and conduct the experiment in another state with a significant tradition of ballot initiatives (Oregon for example). 
+
 
 \subsection{Treatment details} \label{sec: treatment}
 
@@ -261,6 +265,10 @@ In both cases (mail or canvassing), we will consider the possibility of partneri
 Our outcome measurement is percentage of ``Yes'' votes on the ballot initiative at the precinct or smaller level. This constitutes a theoretically direct outcome measurement, considering that we are interested in examining how susceptible voters in a direct democracy setting are to information campaigns by different groups. 
 
 As our outcome is ``Yes" vote and we will provide one pro-initiative treatment and one negative anti-initiative treatment, we should illicit one positive treatment effect and one negative. If the absolute values of the treatment effects are the same, or if the business treatment is higher in absolute value, that supports the capture hypothesis (i.e. people weigh both sources of information equally). If the business treatment is smaller in absolute value, it disproves the capture hypothesis and suggests that people value research more than potentially biased information.
+
+
+In addition, we will look for the existence of two potential heterogeneous treatment effects: (i) partisanship of the precinct (as measured by a synthetic variable using results for federal elections over the last 10 years) and (ii) average education or income level of the precinct.
+
 
 \subsection{Election cycle and choice of ballot measure} \label{sec:policy}
 
@@ -282,6 +290,10 @@ Our ideal ballot measure would involve a policy with a scientific or policy rese
 
 \subsection{Power analysis} \label{sec: power}
 \citet{bloom1999using} and \citet{raudenbush1997statistical} provided excellent illustrations of power analysis for cluster random assignment. We can also rely on existing field experiments conducted during an election and using precincts as clusters. This power analysis will allow us to evaluate how many clusters (i.e. precincts) we will need to make this experiment worth conducting. 
+
+
+We are still gathering data on the number of precincts and their population in California, therefore we do not present a power analysis at this stage. However, given the large number of precincts in California (more than 24.000), we do not expect power issues for this experiment.
+
 
 \section{Survey experiment} \label{sec:Design survey}
 
