@@ -28,12 +28,12 @@ ballot2020approved = read_html("https://ballotpedia.org/2020_ballot_measures")
 alabama1 = ballot2020approved %>% 
   html_nodes("table") %>%
   html_table(fill = TRUE, header = TRUE) %>%
-  extract2(3) %>% mutate(state = "Alaska", date = "March 3, 2020")
+  extract2(3) %>% mutate(state = "Alabama", date = "March 3, 2020")
   
 alabama2 = ballot2020approved %>% 
   html_nodes("table") %>%
   html_table(fill = TRUE, header = TRUE) %>%
-  extract2(4) %>% mutate(state = "Alaska", date = "November 3, 2020")
+  extract2(4) %>% mutate(state = "Alabama", date = "November 3, 2020")
 
 arkansas = ballot2020approved %>% 
   html_nodes("table") %>%
@@ -115,10 +115,15 @@ wyoming = ballot2020approved %>%
   html_table(fill = TRUE, header = TRUE) %>%
   extract2(20) %>% mutate(state = "Wyoming", date = "November 3, 2020")
 
+oregon = ballot2020approved %>% 
+  html_nodes("table") %>%
+  html_table(fill = TRUE, header = TRUE) %>%
+  extract2(21) %>% mutate(state = "Oregon", date = "November 3, 2020")
+
 # Combine states
 approved = bind_rows(alabama1, alabama2, arkansas, california, colorado, illinois, 
                  iowa, louisiana, michigan, missouri, montana, nebraska, 
-                 nevada, newmexico, northdakota, utah, wisconsin, wyoming)
+                 nevada, newmexico, northdakota, oregon, utah, wisconsin, wyoming)
 
 # Clean dataframe
 approved = approved %>%
@@ -185,7 +190,10 @@ arizona = ballot2020potential %>%
   html_nodes("table") %>% 
   html_table(fill = TRUE)
 
-
+oregon = ballot2020potential %>% 
+  html_nodes("#Oregon") %>%  
+  html_nodes("table") %>% 
+  html_table(fill = TRUE)
 
 
 
@@ -204,3 +212,4 @@ create_data <- function(container, p){
 pages <- c(0:99999)
 prefix <- "https://amp-mei.net/aim/viewActivityPreview.do~public=true~pageId=2~activityId="
 container_pages <- paste0(prefix, pages)
+
